@@ -1,5 +1,5 @@
 //
-//  Cozinheiro.swift
+//  Gerente.swift
 //  TF-LBD
 //
 //  Created by Geovanni Oliveira de Jesus on 09/10/17.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Realm
+import  RealmSwift
 
-class Cozinheiro: Object {
+class Gerente: Object {
     
 }

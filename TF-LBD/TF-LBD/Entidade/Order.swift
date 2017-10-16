@@ -1,5 +1,5 @@
 //
-//  NotaFiscal.swift
+//  Pedido.swift
 //  TF-LBD
 //
 //  Created by Geovanni Oliveira de Jesus on 09/10/17.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
+import RealmSwift
 
-class NotaFiscal {
+class Order: Object {
     
 }
-

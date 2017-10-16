@@ -1,5 +1,5 @@
 //
-//  Produto.swift
+//  Garçon.swift
 //  TF-LBD
 //
 //  Created by Geovanni Oliveira de Jesus on 09/10/17.
@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Produto {
+class Garcom: Object  {
     
 }
