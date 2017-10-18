@@ -21,6 +21,7 @@ class Person: Object {
     @objc dynamic var civilState: CivilState = CivilState()
     @objc dynamic var job: Job = Job()
     @objc dynamic var email: String = ""
+    @objc dynamic var address: Address = Address()
     
 }
 
@@ -46,9 +47,19 @@ class CivilState: Object {
     @objc dynamic var civilStateDescription: String = ""
 }
 
-class Phone: Object{
+class Phone: Object {
     @objc dynamic var number: String = ""
     @objc dynamic var owner: Person?
 }
 
-class 
+class SchoolDegree: Object {
+    @objc dynamic var id: String = UUID().uuidString
+    @objc dynamic var schoolDegreeDescription: String = ""
+}
+
+class Naturality: Object{
+    @objc dynamic var id: String = UUID().uuidString
+    @objc dynamic var naturalityDescription: String = ""
+}
+
+

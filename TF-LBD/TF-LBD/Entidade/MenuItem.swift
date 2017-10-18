@@ -10,5 +10,7 @@ import Foundation
 import RealmSwift
 
 class MenuItem: Object {
-    
+    @objc dynamic var id: String = UUID().uuidString
+    var products = List<Product>()
+    @objc dynamic var price: Float = 0.0
 }

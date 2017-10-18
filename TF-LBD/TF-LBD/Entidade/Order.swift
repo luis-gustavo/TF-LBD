@@ -10,5 +10,7 @@ import Foundation
 import RealmSwift
 
 class Order: Object {
-    
+    @objc dynamic var id: String = UUID().uuidString
+    var menuItems = List<MenuItem>()
+    @objc dynamic var table = Table()
 }

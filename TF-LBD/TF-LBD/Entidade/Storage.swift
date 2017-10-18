@@ -10,5 +10,6 @@ import Foundation
 import RealmSwift
 
 class Storage: Object {
-    
+    @objc dynamic var id: String = UUID().uuidString
+    var products = List<Product>()
 }

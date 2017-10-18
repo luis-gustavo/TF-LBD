@@ -10,5 +10,6 @@ import Foundation
 import RealmSwift
 
 class Client: Object {
-    
+    @objc dynamic var personData: Person = Person()
+    //@objc dynamic var
 }

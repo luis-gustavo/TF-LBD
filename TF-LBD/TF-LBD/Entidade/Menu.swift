@@ -10,5 +10,7 @@ import Foundation
 import RealmSwift
 
 class Menu: Object {
-    
+    @objc dynamic var id: String = UUID().uuidString
+    var items = List<MenuItem>()
+    var MenuType: String = ""
 }

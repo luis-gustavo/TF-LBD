@@ -10,5 +10,6 @@ import Foundation
 import RealmSwift
 
 class Table: Object {
-    
+    @objc dynamic var id: Int = 0
+    @objc dynamic var capacity: Int = 0
 }
