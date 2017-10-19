@@ -10,6 +10,12 @@ import Foundation
 import RealmSwift
 
 class Client: Object {
-    @objc dynamic var personData: Person = Person()
-    //@objc dynamic var
+    
+    @objc dynamic var id: String = UUID().uuidString
+    @objc dynamic var cpf: String = ""
+    @objc dynamic var name: String = ""
+    @objc dynamic var email: String = ""
+    @objc dynamic var address: Address = Address()
+    @objc dynamic var phone: Phone = Phone()
+    
 }

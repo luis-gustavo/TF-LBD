@@ -10,5 +10,8 @@ import Foundation
 import RealmSwift
 
 class Bill: Object {
-    
+    @objc dynamic var id: String = UUID().uuidString
+    var orders = List<Order>()
+    @objc dynamic var client: Client?
+    @objc dynamic var cpfClientNotRegistered: String?
 }
