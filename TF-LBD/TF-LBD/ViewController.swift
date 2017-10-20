@@ -7,11 +7,31 @@
 //
 
 import UIKit
+import RealmSwift
+
+class Lala {
+    var id = UUID().uuidString
+    var name = "asd"
+}
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let realm = try! Realm()
+        
+        
+        try! realm.write {
+            realm.deleteAll()
+        }
+        
+        InsertionOfAddress.insertionOfAllAddresses(realm: realm)
+        
+        let a = realm.objects(Address.self).toArray()
+        print(a.count)
+        for b in a{
+            print(b)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -23,3 +43,16 @@ class ViewController: UIViewController {
 
 }
 
+extension Results {
+    
+    func toArray() -> [T] {
+        return self.map{$0}
+    }
+}
+
+extension RealmSwift.List {
+    
+    func toArray() -> [T] {
+        return self.map{$0}
+    }
+}

@@ -15,7 +15,7 @@ class Client: Object {
     @objc dynamic var cpf: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var email: String = ""
-    @objc dynamic var address: Address = Address()
-    @objc dynamic var phone: Phone = Phone()
+    @objc dynamic var address: Address? = Address()
+    @objc dynamic var phone: Phone? = Phone()
     
 }

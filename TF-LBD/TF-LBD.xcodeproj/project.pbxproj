@@ -8,30 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		0F7E1A7F23CF63DDD1416DEE /* Pods_TF_LBD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDDD69F0E7F507406D62BB2 /* Pods_TF_LBD.framework */; };
+		6E2A23181F99459400218286 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2A23171F99459300218286 /* Job.swift */; };
+		6E2A231A1F99459900218286 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2A23191F99459900218286 /* Address.swift */; };
+		6E2A231E1F99464800218286 /* InsertionOfAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2A231D1F99464800218286 /* InsertionOfAddress.swift */; };
 		6E65050B1F8B9495004C5642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65050A1F8B9495004C5642 /* AppDelegate.swift */; };
 		6E65050D1F8B9495004C5642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65050C1F8B9495004C5642 /* ViewController.swift */; };
 		6E6505101F8B9495004C5642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E65050E1F8B9495004C5642 /* Main.storyboard */; };
 		6E6505121F8B9495004C5642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6505111F8B9495004C5642 /* Assets.xcassets */; };
 		6E6505151F8B9495004C5642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6505131F8B9495004C5642 /* LaunchScreen.storyboard */; };
-		D49998061F8B9D7C0028FA2A /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998051F8B9D7C0028FA2A /* Pedido.swift */; };
-		D49998081F8B9D8E0028FA2A /* Garcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998071F8B9D8E0028FA2A /* Garcom.swift */; };
-		D499980A1F8B9DAD0028FA2A /* Cozinheiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998091F8B9DAD0028FA2A /* Cozinheiro.swift */; };
-		D499980C1F8B9DBD0028FA2A /* Barman.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499980B1F8B9DBD0028FA2A /* Barman.swift */; };
-		D499980E1F8B9E380028FA2A /* Mesa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499980D1F8B9E380028FA2A /* Mesa.swift */; };
-		D49998101F8B9E540028FA2A /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499980F1F8B9E540028FA2A /* Conta.swift */; };
-		D49998121F8B9F330028FA2A /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998111F8B9F330028FA2A /* Produto.swift */; };
-		D49998141F8B9F3E0028FA2A /* NotaFiscal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998131F8B9F3E0028FA2A /* NotaFiscal.swift */; };
-		D49998161F8B9F590028FA2A /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998151F8B9F590028FA2A /* Cliente.swift */; };
-		D49998181F8B9F610028FA2A /* Gerente.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998171F8B9F610028FA2A /* Gerente.swift */; };
-		D499981A1F8B9F6E0028FA2A /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998191F8B9F6E0028FA2A /* Pessoa.swift */; };
-		D499981C1F8B9FD10028FA2A /* Funcionario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499981B1F8B9FD10028FA2A /* Funcionario.swift */; };
+		D49998061F8B9D7C0028FA2A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998051F8B9D7C0028FA2A /* Order.swift */; };
+		D499980E1F8B9E380028FA2A /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499980D1F8B9E380028FA2A /* Table.swift */; };
+		D49998101F8B9E540028FA2A /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499980F1F8B9E540028FA2A /* Bill.swift */; };
+		D49998121F8B9F330028FA2A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998111F8B9F330028FA2A /* Product.swift */; };
+		D49998141F8B9F3E0028FA2A /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998131F8B9F3E0028FA2A /* Invoice.swift */; };
+		D49998161F8B9F590028FA2A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998151F8B9F590028FA2A /* Client.swift */; };
+		D499981C1F8B9FD10028FA2A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499981B1F8B9FD10028FA2A /* Employee.swift */; };
 		D499981E1F8BA0360028FA2A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499981D1F8BA0360028FA2A /* Menu.swift */; };
-		D49998201F8BA0400028FA2A /* ItemMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499981F1F8BA0400028FA2A /* ItemMenu.swift */; };
-		D49998221F8BA04D0028FA2A /* Estoque.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998211F8BA04D0028FA2A /* Estoque.swift */; };
+		D49998201F8BA0400028FA2A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499981F1F8BA0400028FA2A /* MenuItem.swift */; };
+		D49998221F8BA04D0028FA2A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998211F8BA04D0028FA2A /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5292AFBE1F574AF2D6C1AB4D /* Pods-TF-LBD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TF-LBD.release.xcconfig"; path = "Pods/Target Support Files/Pods-TF-LBD/Pods-TF-LBD.release.xcconfig"; sourceTree = "<group>"; };
+		6E2A23171F99459300218286 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		6E2A23191F99459900218286 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		6E2A231D1F99464800218286 /* InsertionOfAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfAddress.swift; sourceTree = "<group>"; };
 		6E6505071F8B9495004C5642 /* TF-LBD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF-LBD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E65050A1F8B9495004C5642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E65050C1F8B9495004C5642 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,21 +41,16 @@
 		6E6505141F8B9495004C5642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E6505161F8B9495004C5642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDDD69F0E7F507406D62BB2 /* Pods_TF_LBD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TF_LBD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D49998051F8B9D7C0028FA2A /* Pedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
-		D49998071F8B9D8E0028FA2A /* Garcom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garcom.swift; sourceTree = "<group>"; };
-		D49998091F8B9DAD0028FA2A /* Cozinheiro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cozinheiro.swift; sourceTree = "<group>"; };
-		D499980B1F8B9DBD0028FA2A /* Barman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barman.swift; sourceTree = "<group>"; };
-		D499980D1F8B9E380028FA2A /* Mesa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesa.swift; sourceTree = "<group>"; };
-		D499980F1F8B9E540028FA2A /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
-		D49998111F8B9F330028FA2A /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
-		D49998131F8B9F3E0028FA2A /* NotaFiscal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotaFiscal.swift; sourceTree = "<group>"; };
-		D49998151F8B9F590028FA2A /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
-		D49998171F8B9F610028FA2A /* Gerente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gerente.swift; sourceTree = "<group>"; };
-		D49998191F8B9F6E0028FA2A /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
-		D499981B1F8B9FD10028FA2A /* Funcionario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcionario.swift; sourceTree = "<group>"; };
+		D49998051F8B9D7C0028FA2A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D499980D1F8B9E380028FA2A /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		D499980F1F8B9E540028FA2A /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		D49998111F8B9F330028FA2A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D49998131F8B9F3E0028FA2A /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		D49998151F8B9F590028FA2A /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		D499981B1F8B9FD10028FA2A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		D499981D1F8BA0360028FA2A /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		D499981F1F8BA0400028FA2A /* ItemMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMenu.swift; sourceTree = "<group>"; };
-		D49998211F8BA04D0028FA2A /* Estoque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estoque.swift; sourceTree = "<group>"; };
+		D499981F1F8BA0400028FA2A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		D49998211F8BA04D0028FA2A /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		F4FECC02277F3DEAD4508E2E /* Pods-TF-LBD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TF-LBD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TF-LBD/Pods-TF-LBD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E2A231B1F99462200218286 /* Popula */ = {
+			isa = PBXGroup;
+			children = (
+				6E2A231D1F99464800218286 /* InsertionOfAddress.swift */,
+			);
+			path = Popula;
+			sourceTree = "<group>";
+		};
 		6E6504FE1F8B9495004C5642 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +96,7 @@
 		6E6505091F8B9495004C5642 /* TF-LBD */ = {
 			isa = PBXGroup;
 			children = (
+				6E2A231B1F99462200218286 /* Popula */,
 				D49998041F8B9D5C0028FA2A /* Entidade */,
 				6E65050C1F8B9495004C5642 /* ViewController.swift */,
 				6E65050E1F8B9495004C5642 /* Main.storyboard */,
@@ -122,21 +127,18 @@
 		D49998041F8B9D5C0028FA2A /* Entidade */ = {
 			isa = PBXGroup;
 			children = (
-				D49998051F8B9D7C0028FA2A /* Pedido.swift */,
-				D49998071F8B9D8E0028FA2A /* Garcom.swift */,
-				D49998091F8B9DAD0028FA2A /* Cozinheiro.swift */,
-				D499980B1F8B9DBD0028FA2A /* Barman.swift */,
-				D499980D1F8B9E380028FA2A /* Mesa.swift */,
-				D499980F1F8B9E540028FA2A /* Conta.swift */,
-				D49998111F8B9F330028FA2A /* Produto.swift */,
-				D49998131F8B9F3E0028FA2A /* NotaFiscal.swift */,
-				D49998151F8B9F590028FA2A /* Cliente.swift */,
-				D49998171F8B9F610028FA2A /* Gerente.swift */,
-				D49998191F8B9F6E0028FA2A /* Pessoa.swift */,
-				D499981B1F8B9FD10028FA2A /* Funcionario.swift */,
+				6E2A23191F99459900218286 /* Address.swift */,
+				6E2A23171F99459300218286 /* Job.swift */,
+				D49998051F8B9D7C0028FA2A /* Order.swift */,
+				D499980D1F8B9E380028FA2A /* Table.swift */,
+				D499980F1F8B9E540028FA2A /* Bill.swift */,
+				D49998111F8B9F330028FA2A /* Product.swift */,
+				D49998131F8B9F3E0028FA2A /* Invoice.swift */,
+				D49998151F8B9F590028FA2A /* Client.swift */,
+				D499981B1F8B9FD10028FA2A /* Employee.swift */,
 				D499981D1F8BA0360028FA2A /* Menu.swift */,
-				D499981F1F8BA0400028FA2A /* ItemMenu.swift */,
-				D49998211F8BA04D0028FA2A /* Estoque.swift */,
+				D499981F1F8BA0400028FA2A /* MenuItem.swift */,
+				D49998211F8BA04D0028FA2A /* Storage.swift */,
 			);
 			path = Entidade;
 			sourceTree = "<group>";
@@ -280,23 +282,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49998221F8BA04D0028FA2A /* Estoque.swift in Sources */,
-				D49998061F8B9D7C0028FA2A /* Pedido.swift in Sources */,
-				D499980E1F8B9E380028FA2A /* Mesa.swift in Sources */,
-				D499981A1F8B9F6E0028FA2A /* Pessoa.swift in Sources */,
-				D49998121F8B9F330028FA2A /* Produto.swift in Sources */,
-				D49998081F8B9D8E0028FA2A /* Garcom.swift in Sources */,
-				D49998161F8B9F590028FA2A /* Cliente.swift in Sources */,
-				D49998101F8B9E540028FA2A /* Conta.swift in Sources */,
-				D499980C1F8B9DBD0028FA2A /* Barman.swift in Sources */,
+				D49998221F8BA04D0028FA2A /* Storage.swift in Sources */,
+				D49998061F8B9D7C0028FA2A /* Order.swift in Sources */,
+				D499980E1F8B9E380028FA2A /* Table.swift in Sources */,
+				D49998121F8B9F330028FA2A /* Product.swift in Sources */,
+				6E2A23181F99459400218286 /* Job.swift in Sources */,
+				D49998161F8B9F590028FA2A /* Client.swift in Sources */,
+				6E2A231A1F99459900218286 /* Address.swift in Sources */,
+				D49998101F8B9E540028FA2A /* Bill.swift in Sources */,
 				6E65050D1F8B9495004C5642 /* ViewController.swift in Sources */,
+				6E2A231E1F99464800218286 /* InsertionOfAddress.swift in Sources */,
 				D499981E1F8BA0360028FA2A /* Menu.swift in Sources */,
-				D499981C1F8B9FD10028FA2A /* Funcionario.swift in Sources */,
-				D49998141F8B9F3E0028FA2A /* NotaFiscal.swift in Sources */,
+				D499981C1F8B9FD10028FA2A /* Employee.swift in Sources */,
+				D49998141F8B9F3E0028FA2A /* Invoice.swift in Sources */,
 				6E65050B1F8B9495004C5642 /* AppDelegate.swift in Sources */,
-				D49998201F8BA0400028FA2A /* ItemMenu.swift in Sources */,
-				D49998181F8B9F610028FA2A /* Gerente.swift in Sources */,
-				D499980A1F8B9DAD0028FA2A /* Cozinheiro.swift in Sources */,
+				D49998201F8BA0400028FA2A /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

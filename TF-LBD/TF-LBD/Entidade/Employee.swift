@@ -13,15 +13,15 @@ class Employee: Object {
     
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var cpf: String = ""
-    @objc dynamic var rg: Rg = Rg()
+    @objc dynamic var rg: Rg? = Rg()
     @objc dynamic var name: String = ""
-    @objc dynamic var parents: Parents = Parents()
-    @objc dynamic var sex: Sex = Sex()
-    @objc dynamic var civilState: CivilState = CivilState()
-    @objc dynamic var job: Job = Job()
+    @objc dynamic var parents: Parents? = Parents()
+    @objc dynamic var sex: Sex? = Sex()
+    @objc dynamic var civilState: CivilState? = CivilState()
+    @objc dynamic var job: Job? = Job()
     @objc dynamic var email: String = ""
-    @objc dynamic var address: Address = Address()
-    @objc dynamic var phone: Phone = Phone()
+    @objc dynamic var address: Address? = Address()
+    @objc dynamic var phone: Phone? = Phone()
     
 }
 

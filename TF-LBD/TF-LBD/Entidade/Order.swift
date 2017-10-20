@@ -12,7 +12,7 @@ import RealmSwift
 class Order: Object {
     @objc dynamic var id: String = UUID().uuidString
     var menuItems = List<MenuItem>()
-    @objc dynamic var table = Table()
+    @objc dynamic var table: Table? = Table()
     @objc dynamic var waiter: Employee?
 }
 
