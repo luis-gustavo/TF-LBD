@@ -11,6 +11,7 @@ import RealmSwift
 
 class MenuItem: Object {
     @objc dynamic var id: String = UUID().uuidString
+    @objc dynamic var name: String = ""
     var products = List<Product>()
     @objc dynamic var price: Float = 0.0
     @objc dynamic var responsableToMake: ResponsableToMake? = ResponsableToMake()

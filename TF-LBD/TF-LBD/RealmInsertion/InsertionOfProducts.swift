@@ -10,29 +10,7 @@ import Foundation
 import RealmSwift
 
 class InsertionOfProducts {
-    
-    //função genérica para criar produtos específicos
-//    func addNewProduct(realm: Realm,
-//                       name: String,
-//                       isPerishable: Bool,
-//                       expirationDate: Date,
-//                       quantity: Float,
-//                       amount: Amount) {
-//
-//        let product = Product()
-//        product.name = name
-//        product.isPerishable = isPerishable
-//        product.expirationDate = expirationDate
-//        product.quantity = quantity
-//        product.amount = amount
-//
-//        try! realm.write {
-//            realm.add(product)
-//        }
-//    }
-    
 
-    
     // MARK: - insertion of specific products
     
     /**
@@ -45,7 +23,7 @@ class InsertionOfProducts {
         greenCorn.isPerishable = false
         greenCorn.expirationDate = returnExpirationDateFromNow(day: 2, month: 1, year: 1)
         greenCorn.quantity = 200.0
-        greenCorn.amount = realm.objects(Amount.self).filter("amountDesctiption = 'grama'").first
+        greenCorn.amount = realm.objects(Amount.self).filter("amountDescription = 'grama'").first
         
         try! realm.write {
             realm.add(greenCorn)
@@ -132,7 +110,7 @@ class InsertionOfProducts {
     
     class func insertionOfFlour(realm: Realm) {
         let flour = Product()
-        flour.name = "fariha"
+        flour.name = "farinha"
         flour.isPerishable = true
         flour.expirationDate = returnExpirationDateFromNow(day: 4, month: 2, year: 0)
         flour.quantity = 1.0
@@ -150,7 +128,7 @@ class InsertionOfProducts {
     
     class func insertionOfEgg(realm: Realm) {
         let egg = Product()
-        egg.name = "Ovo"
+        egg.name = "ovo"
         egg.isPerishable = true
         egg.expirationDate = returnExpirationDateFromNow(day: 4, month: 2, year: 0)
         egg.quantity = 1.0
@@ -196,10 +174,14 @@ class InsertionOfProducts {
         insertionOfGreenCorn(realm: realm)
         insertionOfChickenBreast(realm: realm)
         insertionOfMilkCream(realm: realm)
+        insertionOfCreamyCheese(realm: realm)
     }
 }
 
 //let pups = realm.objects(Dog.self).filter("age < 2")
+
+// MARK: - insertion of Amount
+
 class InsertOfAmount {
 
     /**

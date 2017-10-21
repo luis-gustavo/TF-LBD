@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         }
         
         InsertionOfAddress.insertionOfAllAddresses(realm: realm)
-        
+
         let a = realm.objects(Address.self).toArray()
         print(a.count)
         for b in a{
@@ -50,6 +50,14 @@ class ViewController: UIViewController {
         // insertion of products
         InsertionOfProducts.createAllProducts(realm: realm)
         
+        //insertion of responsable sector to make the dish
+        InsertionOfMenuItem.insertionOfSectorResponsableToMake(realm: realm)
+        
+        //insertion of items for the menu
+        InsertionOfMenuItem.createAllItemsForTheMenu(realm: realm)
+        
+        //isnertion of Menu
+        InsertionOfMenu.insertMainManuAndDependencies(realm: realm)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

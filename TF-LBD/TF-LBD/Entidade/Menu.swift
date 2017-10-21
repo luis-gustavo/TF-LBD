@@ -11,11 +11,11 @@ import RealmSwift
 
 class Menu: Object {
     @objc dynamic var id: String = UUID().uuidString
-    var items = List<MenuItem>()
+    var items = [MenuItem]()
     var menuType: MenuType? = MenuType()
 }
 
-class MenuType {
+class MenuType: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var menuTypeDescription: String = ""
 }

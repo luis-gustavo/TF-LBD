@@ -41,7 +41,7 @@ class InsertionOfJob {
     
     
     class func createManager(realm: Realm) {
-        var manager = Job()
+        let manager = Job()
         manager.jobDescription = "Gerente"
         
         try! realm.write {

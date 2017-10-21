@@ -16,6 +16,8 @@
 		D45E6E1B1F9BBC5200196535 /* Popula in Resources */ = {isa = PBXBuildFile; fileRef = D45E6E1A1F9BBC5200196535 /* Popula */; };
 		D45E6E1D1F9BBCE100196535 /* InsertionOfAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E6E1C1F9BBCE100196535 /* InsertionOfAddress.swift */; };
 		D45E6E1F1F9BBD0600196535 /* InsertionOfEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E6E1E1F9BBD0600196535 /* InsertionOfEmployee.swift */; };
+		D45E6E221F9BC22900196535 /* InsertionOfMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E6E211F9BC22900196535 /* InsertionOfMenuItem.swift */; };
+		D45E6E241F9BCE9800196535 /* InsertionOfMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E6E231F9BCE9800196535 /* InsertionOfMenu.swift */; };
 		D469F2331F9945CA005F7FC0 /* InsertionOfJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469F2321F9945CA005F7FC0 /* InsertionOfJob.swift */; };
 		D469F2351F994DAF005F7FC0 /* InsertionOfProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469F2341F994DAF005F7FC0 /* InsertionOfProducts.swift */; };
 		D469F2371F99519E005F7FC0 /* InsertionOfProductsOnStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469F2361F99519E005F7FC0 /* InsertionOfProductsOnStorage.swift */; };
@@ -47,6 +49,8 @@
 		D45E6E1A1F9BBC5200196535 /* Popula */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Popula; path = "TF-LBD/Popula"; sourceTree = SOURCE_ROOT; };
 		D45E6E1C1F9BBCE100196535 /* InsertionOfAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertionOfAddress.swift; path = "TF-LBD/Popula/InsertionOfAddress.swift"; sourceTree = "<group>"; };
 		D45E6E1E1F9BBD0600196535 /* InsertionOfEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertionOfEmployee.swift; path = "TF-LBD/Popula/InsertionOfEmployee.swift"; sourceTree = "<group>"; };
+		D45E6E211F9BC22900196535 /* InsertionOfMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfMenuItem.swift; sourceTree = "<group>"; };
+		D45E6E231F9BCE9800196535 /* InsertionOfMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfMenu.swift; sourceTree = "<group>"; };
 		D469F2321F9945CA005F7FC0 /* InsertionOfJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfJob.swift; sourceTree = "<group>"; };
 		D469F2341F994DAF005F7FC0 /* InsertionOfProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfProducts.swift; sourceTree = "<group>"; };
 		D469F2361F99519E005F7FC0 /* InsertionOfProductsOnStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfProductsOnStorage.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				D469F2321F9945CA005F7FC0 /* InsertionOfJob.swift */,
 				D469F2341F994DAF005F7FC0 /* InsertionOfProducts.swift */,
 				D469F2361F99519E005F7FC0 /* InsertionOfProductsOnStorage.swift */,
+				D45E6E211F9BC22900196535 /* InsertionOfMenuItem.swift */,
+				D45E6E231F9BCE9800196535 /* InsertionOfMenu.swift */,
 			);
 			path = RealmInsertion;
 			sourceTree = "<group>";
@@ -308,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45E6E221F9BC22900196535 /* InsertionOfMenuItem.swift in Sources */,
+				D45E6E241F9BCE9800196535 /* InsertionOfMenu.swift in Sources */,
 				D45E6E1F1F9BBD0600196535 /* InsertionOfEmployee.swift in Sources */,
 				D45E6E1D1F9BBCE100196535 /* InsertionOfAddress.swift in Sources */,
 				D49998221F8BA04D0028FA2A /* Storage.swift in Sources */,
