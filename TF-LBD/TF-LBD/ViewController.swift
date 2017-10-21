@@ -32,6 +32,14 @@ class ViewController: UIViewController {
         for b in a{
             print(b)
         }
+
+        InsertionOfEmployee.insertionOfAllEmployees(realm: realm)
+        
+        let b = realm.objects(Employee.self).toArray()
+        print(b.count)
+        for c in b{
+            print(c)
+        }
         
         // insertion of Jobs
         InsertionOfJob.creationOfAllJobs(realm: realm)
@@ -48,8 +56,9 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+       
     }
-
 
 }
 
