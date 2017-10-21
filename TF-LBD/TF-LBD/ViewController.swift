@@ -32,14 +32,16 @@ class ViewController: UIViewController {
         for b in a{
             print(b)
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        InsertionOfEmployee.insertionOfAllEmployees(realm: realm)
+        
+        let b = realm.objects(Employee.self).toArray()
+        print(b.count)
+        for c in b{
+            print(c)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

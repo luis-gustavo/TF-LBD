@@ -22,6 +22,7 @@ class Employee: Object {
     @objc dynamic var email: String = ""
     @objc dynamic var address: Address? = Address()
     @objc dynamic var phone: Phone? = Phone()
+    @objc dynamic var naturality: City? = City()
     
 }
 
@@ -58,10 +59,3 @@ class SchoolDegree: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var schoolDegreeDescription: String = ""
 }
-
-class Naturality: Object{
-    @objc dynamic var id: String = UUID().uuidString
-    @objc dynamic var naturalityDescription: String = ""
-}
-
-
