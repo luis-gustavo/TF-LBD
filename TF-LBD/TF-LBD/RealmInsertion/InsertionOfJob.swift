@@ -48,5 +48,12 @@ class InsertionOfJob {
             realm.add(manager)
         }
     }
+    
+    class func creationOfAllJobs(realm: Realm) {
+        createBarMan(realm: realm)
+        createCooker(realm: realm)
+        createWaiter(realm: realm)
+        createManager(realm: realm)
+    }
     //let pups = realm.objects(Dog.self).filter("age < 2")
 }

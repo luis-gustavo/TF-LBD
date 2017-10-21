@@ -32,6 +32,16 @@ class ViewController: UIViewController {
         for b in a{
             print(b)
         }
+        
+        // insertion of Jobs
+        InsertionOfJob.creationOfAllJobs(realm: realm)
+        
+        //insertion of amounts
+        InsertOfAmount.createAllAmounts(realm: realm)
+        
+        // insertion of products
+        InsertionOfProducts.createAllProducts(realm: realm)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
