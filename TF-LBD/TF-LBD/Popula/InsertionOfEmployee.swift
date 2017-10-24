@@ -183,7 +183,7 @@ class InsertionOfEmployee{
         employee1.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee1.cpf = "982.627.429-15"
         employee1.email = "popoyix@asorent.com"
-        //employee1.job =
+        employee1.job = realm.objects(Job.self).filter("jobDescription = 'Garçom'").first
         employee1.name = "Murilo Pereira Araujo"
         employee1.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee1.parents = realm.objects(Parents.self).filter("fatherName = 'Pedro Lima Martins'").first
@@ -196,7 +196,7 @@ class InsertionOfEmployee{
         employee2.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee2.cpf = "737.800.577-00"
         employee2.email = "tuwaxinecu@ether123.net"
-        //employee2.job =
+        employee2.job = realm.objects(Job.self).filter("jobDescription = 'Cozinheiro'").first
         employee2.name = "Rafael Carvalho Fernandes"
         employee2.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee2.parents = realm.objects(Parents.self).filter("fatherName = 'Daniel Cardoso Silva'").first
@@ -209,7 +209,7 @@ class InsertionOfEmployee{
         employee3.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee3.cpf = "452.766.846-34"
         employee3.email = "pefenayib@averdov.com"
-        //employee3.job =
+        employee3.job = realm.objects(Job.self).filter("jobDescription = 'Barman'").first
         employee3.name = "Martim Martins Dias"
         employee3.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee3.parents = realm.objects(Parents.self).filter("fatherName = 'Lucas Rodrigues Souza'").first
@@ -222,7 +222,7 @@ class InsertionOfEmployee{
         employee4.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee4.cpf = "579.206.665-54"
         employee4.email = "hoyemuwoc@averdov.com"
-        //employee4.job =
+        employee4.job = realm.objects(Job.self).filter("jobDescription = 'Gerente'").first
         employee4.name = "Victor Ferreira Alves"
         employee4.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee4.parents = realm.objects(Parents.self).filter("fatherName = 'Kauê Souza Barros'").first
@@ -235,7 +235,7 @@ class InsertionOfEmployee{
         employee5.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee5.cpf = "783.762.406-84"
         employee5.email = "sosupodoh@zhorachu.com"
-        //employee5.job =
+        employee5.job = realm.objects(Job.self).filter("jobDescription = 'Garçom'").first
         employee5.name = "Kaua Goncalves Barbosa"
         employee5.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee5.parents = realm.objects(Parents.self).filter("fatherName = 'Caio Silva Almeida'").first
@@ -248,7 +248,7 @@ class InsertionOfEmployee{
         employee6.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee6.cpf = "346.268.739-52"
         employee6.email = "cakucuyef@payperex2.com"
-        //employee6.job =
+        employee6.job = realm.objects(Job.self).filter("jobDescription = 'Cozinheiro'").first
         employee6.name = "Matilde Pereira Barros"
         employee6.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee6.parents = realm.objects(Parents.self).filter("fatherName = 'Luis Almeida Goncalves'").first
@@ -261,7 +261,7 @@ class InsertionOfEmployee{
         employee7.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee7.cpf = "756.315.174-50"
         employee7.email = "vohipa@averdov.com"
-        //employee7.job =
+        employee7.job = realm.objects(Job.self).filter("jobDescription = 'Barman'").first
         employee7.name = "Tânia Correia Pinto"
         employee7.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee7.parents = realm.objects(Parents.self).filter("fatherName = 'Guilherme Sousa Cavalcanti'").first
@@ -274,7 +274,7 @@ class InsertionOfEmployee{
         employee8.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee8.cpf = "306.456.851-51"
         employee8.email = "nitapeho@averdov.com"
-        //employee8.job =
+        employee8.job = realm.objects(Job.self).filter("jobDescription = 'Gerente'").first
         employee8.name = "Raissa Sousa Correia"
         employee8.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee8.parents = realm.objects(Parents.self).filter("fatherName = 'João Pereira Ribeiro'").first
@@ -287,7 +287,7 @@ class InsertionOfEmployee{
         employee9.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee9.cpf = "453.442.435-37"
         employee9.email = "sitomow@ethersports.org"
-        //employee9.job =
+        employee9.job = realm.objects(Job.self).filter("jobDescription = 'Garçom'").first
         employee9.name = "Beatrice Pinto Ferreira"
         employee9.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee9.parents = realm.objects(Parents.self).filter("fatherName = 'Tiago Pinto Oliveira'").first
@@ -300,7 +300,7 @@ class InsertionOfEmployee{
         employee10.civilState = realm.objects(CivilState.self).filter("civilStateDescription = 'Solteiro(a)'").first
         employee10.cpf = "231.030.353-49"
         employee10.email = "xizuz@nezdiro.org"
-        //employee10.job =
+        employee10.job = realm.objects(Job.self).filter("jobDescription = 'Cozinheiro'").first
         employee10.name = "Clara Fernandes Silva"
         employee10.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee10.parents = realm.objects(Parents.self).filter("fatherName = 'Kai Santos Cardoso'").first

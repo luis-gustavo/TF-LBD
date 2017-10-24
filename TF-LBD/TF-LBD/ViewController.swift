@@ -33,6 +33,9 @@ class ViewController: UIViewController {
             print(b)
         }
 
+        // insertion of Jobs
+        InsertionOfJob.creationOfAllJobs(realm: realm)
+        
         InsertionOfEmployee.insertionOfAllEmployees(realm: realm)
         
         let b = realm.objects(Employee.self).toArray()
@@ -41,14 +44,16 @@ class ViewController: UIViewController {
             print(c)
         }
         
-        // insertion of Jobs
-        InsertionOfJob.creationOfAllJobs(realm: realm)
-        
         //insertion of amounts
         InsertOfAmount.createAllAmounts(realm: realm)
         
         // insertion of products
         InsertionOfProducts.createAllProducts(realm: realm)
+        
+        // creation of the storage
+        InsertionOfProductsOnStorage.insertStorage(realm: realm)
+        let mainStorage = realm.objects(Storage.self).filter("name = 'principal'").first
+        InsertionOfProductsOnStorage.insertionOfAllProductsOnStorage(realm: realm, storage: mainStorage!)
         
         //insertion of responsable sector to make the dish
         InsertionOfMenuItem.insertionOfSectorResponsableToMake(realm: realm)
@@ -58,6 +63,11 @@ class ViewController: UIViewController {
         
         //isnertion of Menu
         InsertionOfMenu.insertMainManuAndDependencies(realm: realm)
+        
+        //insertion of Tables
+        InsertionOfTable.insertAllTables(realm: realm)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

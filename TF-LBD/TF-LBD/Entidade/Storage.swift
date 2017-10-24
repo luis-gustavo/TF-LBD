@@ -11,5 +11,6 @@ import RealmSwift
 
 class Storage: Object {
     @objc dynamic var id: String = UUID().uuidString
+    @objc dynamic var name: String = ""
     var products = List<Product>()
 }
