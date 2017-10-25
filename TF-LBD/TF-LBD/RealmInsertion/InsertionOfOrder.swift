@@ -15,6 +15,7 @@ class InsertionOfOrder {
      function to create the first order
      - parameter realm: realm instance to save the order
      */
+
     class func creationOfFirstOrder(realm: Realm) {
         let order = Order()
         
@@ -34,10 +35,12 @@ class InsertionOfOrder {
         }
     }
     
+
     /**
      function to create the second order
      - parameter realm: realm instance to save the order
      */
+
     class func creationOfSecondOrder(realm:  Realm) {
         
         let order = Order()
@@ -87,6 +90,7 @@ class InsertionOfOrder {
      function to create the fourth order
      - parameter realm: realm instance to save the order
      */
+
     class func creationOfFourthOrder(realm:  Realm) {
         
         let order = Order()
@@ -105,7 +109,9 @@ class InsertionOfOrder {
         order.menuItems.append(fifthOrderedItem!)
         order.menuItems.append(sixthOrderedItem!)
         
+
         order.table = realm.objects(Table.self).filter("id = 3").first
+
         order.waiter = realm.objects(Employee.self).filter("name = 'Murilo Pereira Araujo'").first
         
         try! realm.write {
@@ -117,6 +123,7 @@ class InsertionOfOrder {
      function to create all the orders
      - parameter realm: realm instance to save the orders
      */
+
     class func createAllOrders(realm: Realm) {
         creationOfFirstOrder(realm: realm)
         creationOfSecondOrder(realm: realm)
