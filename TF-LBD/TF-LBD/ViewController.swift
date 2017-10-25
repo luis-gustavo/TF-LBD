@@ -9,38 +9,24 @@
 import UIKit
 import RealmSwift
 
-class Lala {
-    var id = UUID().uuidString
-    var name = "asd"
-}
-
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Instiating Realm
         let realm = try! Realm()
         
-        
+        //cleaning the database
         try! realm.write {
             realm.deleteAll()
         }
         
+        // insertion of Addresses
         InsertionOfAddress.insertionOfAllAddresses(realm: realm)
-
-//        let a = realm.objects(Address.self).toArray()
-//        print(a.count)
-//        for b in a{
-//            print(b)
-//        }
 
         // insertion of Jobs
         InsertionOfJob.creationOfAllJobs(realm: realm)
-//        let jobs = realm.objects(Job.self).toArray()
-//        print(jobs.count)
-//
-//        for job in jobs {
-//            print(job)
-//        }
         
         InsertionOfEmployee.insertionOfAllEmployees(realm: realm)      
         //insertion of amounts
@@ -78,12 +64,6 @@ class ViewController: UIViewController {
         //creation of the invoices
         InsertionOfInvoince.createAllInvoices(realm: realm)
 
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
