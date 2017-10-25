@@ -23,12 +23,12 @@ class InsertionOfClient {
         client.name = "Samuel Martins Dias"
         client.email = "samuel.martins.dias@hotmail.com"
         client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
-        
-        insertPhoneClient1(realm: realm)
         client.phone = realm.objects(Phone.self).filter("number = '11982039485'").first
-        
-        insertAddresClient1(realm: realm)
         client.address = realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 30'").first
+        
+        try! realm.write {
+            realm.add(client)
+        }
     }
     
     /**
@@ -41,12 +41,12 @@ class InsertionOfClient {
         client.name = "Kaua Pinto Cunha"
         client.email = "Kaua.kpc@outlook.com"
         client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
-        
-        insertPhoneClient2(realm: realm)
         client.phone = realm.objects(Phone.self).filter("number = '11992384756'").first
-        
-        insertAddressClient2(realm: realm)
         client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 30'").first
+        
+        try! realm.write {
+            realm.add(client)
+        }
     }
     
     /**
@@ -59,12 +59,12 @@ class InsertionOfClient {
         client.name = "Carlos Rocha Azevedo"
         client.email = "carlos.ra@gmail.com"
         client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
-        
-        insertPhoneClient3(realm: realm)
         client.phone = realm.objects(Phone.self).filter("number = '11999876567'").first
-        
-        insertAddressClient3(realm: realm)
         client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 45'").first
+        
+        try! realm.write {
+            realm.add(client)
+        }
     }
     
     /**
@@ -77,13 +77,12 @@ class InsertionOfClient {
         client.name = "Mariana Correia Cavalcanti"
         client.email = "mariana.correia.cavalcanti@outlook.com.br"
         client.sexo = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
-        
-        insertPhoneClient4(realm: realm)
         client.phone = realm.objects(Phone.self).filter("number = '11999234756'").first
-        
-        insertAddressClient4(realm: realm)
         client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 40 Lote 23'").first
 
+        try! realm.write {
+            realm.add(client)
+        }
     }
     
     /**
@@ -96,12 +95,12 @@ class InsertionOfClient {
         client.name = "Leila Cunha Barros"
         client.email = "LeilaCunhaBarros@gmail.com"
         client.sexo = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
-        
-        insertPhoneClient5(realm: realm)
         client.phone = realm.objects(Phone.self).filter("number = '11987654321'").first
-        
-        insertAddressClient5(realm: realm)
         client.address = realm.objects(Address.self).filter("addressDescription = 'Lapa  Conjunto 53 Lote 29'").first
+        
+        try! realm.write {
+            realm.add(client)
+        }
     }
 
     // MARK: - insertion of Phones
@@ -117,6 +116,7 @@ class InsertionOfClient {
         try! realm.write {
             realm.add(phone)
         }
+        
     }
     
     /**
@@ -189,6 +189,10 @@ class InsertionOfClient {
         address10.addressDescription = "Morumbi Conjunto 4 Lote 30"
         address10.number = 19
         address10.zipCode = "96385219"
+        
+        try! realm.write {
+            realm.add(address10)
+        }
     }
     
     /**
@@ -206,6 +210,10 @@ class InsertionOfClient {
         address10.addressDescription = "Barra Funda  Conjunto 20 Lote 30"
         address10.number = 10
         address10.zipCode = "86385219"
+        
+        try! realm.write {
+            realm.add(address10)
+        }
     }
     
     /**
@@ -224,6 +232,10 @@ class InsertionOfClient {
         address10.addressDescription = "Barra Funda  Conjunto 20 Lote 45"
         address10.number = 10
         address10.zipCode = "86385219"
+        
+        try! realm.write {
+            realm.add(address10)
+        }
     }
     
     /**
@@ -241,6 +253,10 @@ class InsertionOfClient {
         address10.addressDescription = "Barra Funda  Conjunto 40 Lote 23"
         address10.number = 20
         address10.zipCode = "86385419"
+        
+        try! realm.write {
+            realm.add(address10)
+        }
     }
     
     /**
@@ -259,8 +275,26 @@ class InsertionOfClient {
         address10.addressDescription = "Lapa  Conjunto 53 Lote 29"
         address10.number = 28
         address10.zipCode = "86385519"
+        
+        try! realm.write {
+            realm.add(address10)
+        }
     }
     
+    class func createAllPhones(realm: Realm) {
+        insertPhoneClient1(realm: realm)
+        insertPhoneClient2(realm: realm)
+        insertPhoneClient3(realm: realm)
+        insertPhoneClient4(realm: realm)
+        insertPhoneClient5(realm: realm)
+    }
+    class func createAllAddresses(realm: Realm) {
+        insertAddresClient1(realm: realm)
+        insertAddressClient2(realm: realm)
+        insertAddressClient3(realm: realm)
+        insertAddressClient4(realm: realm)
+        insertAddressClient5(realm: realm)
+    }
     // MARK: - criation of all the clients at once
     
     /**

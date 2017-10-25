@@ -103,7 +103,7 @@ class InsertionOfMenuItem {
     
     class func insertionOfKitchenResponsableToMake(realm: Realm) {
         let responsable = ResponsableToMake()
-        responsable.responsableJobDescription = ResponsableJob.kitchen.rawValue
+        responsable.responsableJobDescription = "kitchen"
         
         try! realm.write {
             realm.add(responsable)
@@ -116,7 +116,7 @@ class InsertionOfMenuItem {
      */
     class func insertionOfBarResponsableToMake(realm: Realm) {
         let responsable = ResponsableToMake()
-        responsable.responsableJobDescription = ResponsableJob.bar.rawValue
+        responsable.responsableJobDescription = "bar"
         
         try! realm.write {
             realm.add(responsable)

@@ -18,7 +18,7 @@ class InsertionOfOrder {
 
     class func creationOfFirstOrder(realm: Realm) {
         let order = Order()
-        
+        order.id = 1
         let orderedItem = realm.objects(MenuItem.self).filter("name = 'fricace'").first
         let secondOrderedItem = realm.objects(MenuItem.self).filter("name = 'cha'").first
         let thirdOrderedItem = realm.objects(MenuItem.self).filter("name = 'refrigerante'").first
@@ -33,6 +33,7 @@ class InsertionOfOrder {
         try! realm.write {
             realm.add(order)
         }
+        
     }
     
 
@@ -44,6 +45,7 @@ class InsertionOfOrder {
     class func creationOfSecondOrder(realm:  Realm) {
         
         let order = Order()
+        order.id = 2
         
         let orderedItem = realm.objects(MenuItem.self).filter("name = 'fricace'").first
         let secondOrderedItem = realm.objects(MenuItem.self).filter("name = 'cha'").first
@@ -61,6 +63,7 @@ class InsertionOfOrder {
         try! realm.write {
             realm.add(order)
         }
+        
     }
 
     /**
@@ -70,6 +73,7 @@ class InsertionOfOrder {
     class func creationOfThirdOrder(realm:  Realm) {
         
         let order = Order()
+        order.id = 3
         
         let orderedItem = realm.objects(MenuItem.self).filter("name = 'bolo'").first
         let secondOrderedItem = realm.objects(MenuItem.self).filter("name = 'bolo'").first
@@ -84,6 +88,7 @@ class InsertionOfOrder {
         try! realm.write {
             realm.add(order)
         }
+        
     }
     
     /**
@@ -94,6 +99,7 @@ class InsertionOfOrder {
     class func creationOfFourthOrder(realm:  Realm) {
         
         let order = Order()
+        order.id = 4
         
         let orderedItem = realm.objects(MenuItem.self).filter("name = 'fricace'").first
         let secondOrderedItem = realm.objects(MenuItem.self).filter("name = 'cha'").first

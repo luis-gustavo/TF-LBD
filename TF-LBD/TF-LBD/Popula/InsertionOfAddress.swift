@@ -155,8 +155,15 @@ class InsertionOfAddress{
         address10.number = 19
         address10.zipCode = "96385216"
         
+        let restaurantAdress = Address()
+        restaurantAdress.addressType = enderecoComercial
+        restaurantAdress.neighborhood = morumbi
+        restaurantAdress.addressDescription = "Morumbi Conjunto 4 Lote 40-44"
+        restaurantAdress.number = 2
+        restaurantAdress.zipCode = "72893992"
+        
         try! realm.write {
-            realm.add([address1, address2, address3, address4, address5, address6, address7, address8, address9, address10])
+            realm.add([address1, address2, address3, address4, address5, address6, address7, address8, address9, address10, restaurantAdress])
         }
     }
     
@@ -168,6 +175,8 @@ class InsertionOfAddress{
         insertion.insertionOfNeighborhood(realm: realm)
         insertion.insertionOfAddressType(realm: realm)
         insertion.insertionOfAddress(realm: realm)
+        InsertionOfClient.createAllAddresses(realm: realm)
+        InsertionOfClient.createAllPhones(realm: realm)
     }
 
 }

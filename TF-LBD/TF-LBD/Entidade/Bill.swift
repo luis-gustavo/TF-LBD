@@ -10,9 +10,25 @@ import Foundation
 import RealmSwift
 
 class Bill: Object {
-    @objc dynamic var id: String = UUID().uuidString
+    
+    @objc dynamic var id: Int = 0
     var orders = List<Order>()
     @objc dynamic var table: Table? = Table()
     @objc dynamic var client: Client?
     @objc dynamic var cpfClientNotRegistered: String?
+    
+    /**
+     function to calculate the total of a bill
+     - returns: the total of the bill in Float
+     */
+    func calculateTotal() -> Float {
+        
+        var total: Float = 0.0
+        
+        for item in orders {
+           total = total + item.calculateSubTotal()
+        }
+        
+        return total
+    }
 }

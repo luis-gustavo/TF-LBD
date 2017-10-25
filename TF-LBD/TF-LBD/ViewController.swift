@@ -27,23 +27,22 @@ class ViewController: UIViewController {
         
         InsertionOfAddress.insertionOfAllAddresses(realm: realm)
 
-        let a = realm.objects(Address.self).toArray()
-        print(a.count)
-        for b in a{
-            print(b)
-        }
+//        let a = realm.objects(Address.self).toArray()
+//        print(a.count)
+//        for b in a{
+//            print(b)
+//        }
 
         // insertion of Jobs
         InsertionOfJob.creationOfAllJobs(realm: realm)
+//        let jobs = realm.objects(Job.self).toArray()
+//        print(jobs.count)
+//
+//        for job in jobs {
+//            print(job)
+//        }
         
-        InsertionOfEmployee.insertionOfAllEmployees(realm: realm)
-        
-        let b = realm.objects(Employee.self).toArray()
-        print(b.count)
-        for c in b{
-            print(c)
-        }
-        
+        InsertionOfEmployee.insertionOfAllEmployees(realm: realm)      
         //insertion of amounts
         InsertOfAmount.createAllAmounts(realm: realm)
         
@@ -57,21 +56,28 @@ class ViewController: UIViewController {
         
         //insertion of responsable sector to make the dish
         InsertionOfMenuItem.insertionOfSectorResponsableToMake(realm: realm)
-        
+
         //insertion of items for the menu
         InsertionOfMenuItem.createAllItemsForTheMenu(realm: realm)
-        
-        //isnertion of Menu
+
+        //insertion of Menu
         InsertionOfMenu.insertMainManuAndDependencies(realm: realm)
-        
+
         //insertion of Tables
         InsertionOfTable.insertAllTables(realm: realm)
-        
+
         //insertion of Clients
         InsertionOfClient.createAllClients(realm: realm)
-        
+
         //insertion of Orders
         InsertionOfOrder.createAllOrders(realm: realm)
+
+        //insertion of the bills
+        InsertionOfBill.creationOftheBills(realm: realm)
+
+        //creation of the invoices
+        InsertionOfInvoince.createAllInvoices(realm: realm)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -33,6 +33,8 @@
 		D4A4A9821F9FE5960018F4CD /* InsertionOfTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A9811F9FE5960018F4CD /* InsertionOfTable.swift */; };
 		D4A4A9851F9FF9B70018F4CD /* InsertionOfClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A9841F9FF9B70018F4CD /* InsertionOfClient.swift */; };
 		D4A4A9871FA01C7F0018F4CD /* InsertionOfOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A9861FA01C7F0018F4CD /* InsertionOfOrder.swift */; };
+		D4A4A9891FA0247F0018F4CD /* insertionOfBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A9881FA0247E0018F4CD /* insertionOfBill.swift */; };
+		D4A4A98B1FA02D9D0018F4CD /* InsertionOfInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A98A1FA02D9D0018F4CD /* InsertionOfInvoice.swift */; };
 		D4D91CE41F967E2E00753394 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D91CE31F967E2E00753394 /* Address.swift */; };
 		D4ED068F1F8E46C200288B9B /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED068E1F8E46C200288B9B /* Job.swift */; };
 		D4ED06911F8E47CD00288B9B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED06901F8E47CD00288B9B /* Employee.swift */; };
@@ -69,6 +71,8 @@
 		D4A4A9811F9FE5960018F4CD /* InsertionOfTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfTable.swift; sourceTree = "<group>"; };
 		D4A4A9841F9FF9B70018F4CD /* InsertionOfClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfClient.swift; sourceTree = "<group>"; };
 		D4A4A9861FA01C7F0018F4CD /* InsertionOfOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfOrder.swift; sourceTree = "<group>"; };
+		D4A4A9881FA0247E0018F4CD /* insertionOfBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insertionOfBill.swift; sourceTree = "<group>"; };
+		D4A4A98A1FA02D9D0018F4CD /* InsertionOfInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfInvoice.swift; sourceTree = "<group>"; };
 		D4D91CE31F967E2E00753394 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		D4ED068E1F8E46C200288B9B /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		D4ED06901F8E47CD00288B9B /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				D4A4A9811F9FE5960018F4CD /* InsertionOfTable.swift */,
 				D4A4A9841F9FF9B70018F4CD /* InsertionOfClient.swift */,
 				D4A4A9861FA01C7F0018F4CD /* InsertionOfOrder.swift */,
+				D4A4A9881FA0247E0018F4CD /* insertionOfBill.swift */,
+				D4A4A98A1FA02D9D0018F4CD /* InsertionOfInvoice.swift */,
 			);
 			path = RealmInsertion;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 				D49998061F8B9D7C0028FA2A /* Order.swift in Sources */,
 				D499980E1F8B9E380028FA2A /* Table.swift in Sources */,
 				D4D91CE41F967E2E00753394 /* Address.swift in Sources */,
+				D4A4A9891FA0247F0018F4CD /* insertionOfBill.swift in Sources */,
 				D49998121F8B9F330028FA2A /* Product.swift in Sources */,
 				D4ED068F1F8E46C200288B9B /* Job.swift in Sources */,
 				D49998161F8B9F590028FA2A /* Client.swift in Sources */,
@@ -342,6 +349,7 @@
 				D499981E1F8BA0360028FA2A /* Menu.swift in Sources */,
 				D4A4A9851F9FF9B70018F4CD /* InsertionOfClient.swift in Sources */,
 				D49998141F8B9F3E0028FA2A /* Invoice.swift in Sources */,
+				D4A4A98B1FA02D9D0018F4CD /* InsertionOfInvoice.swift in Sources */,
 				6E65050B1F8B9495004C5642 /* AppDelegate.swift in Sources */,
 				D49998201F8BA0400028FA2A /* MenuItem.swift in Sources */,
 				D469F2351F994DAF005F7FC0 /* InsertionOfProducts.swift in Sources */,
