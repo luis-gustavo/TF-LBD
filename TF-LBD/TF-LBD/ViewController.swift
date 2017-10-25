@@ -70,6 +70,8 @@ class ViewController: UIViewController {
         //insertion of Clients
         InsertionOfClient.createAllClients(realm: realm)
         
+        //insertion of Orders
+        InsertionOfOrder.createAllOrders(realm: realm)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
