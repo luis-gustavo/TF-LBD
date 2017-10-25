@@ -19,6 +19,7 @@ class InsertionOfTable {
     class func insertTableForFourOnGroundFloor(realm: Realm) {
         
         let table = Table()
+        table.id = 1
         table.floor = 0
         table.capacity = 4
         
@@ -34,6 +35,7 @@ class InsertionOfTable {
     
     class func insertTableFor2OnGroundFloor(realm: Realm) {
         let table = Table()
+        table.id = 2
         table.capacity = 2
         table.floor = 0
         
@@ -48,6 +50,7 @@ class InsertionOfTable {
      */
    class func insertTableFor8OnTheGroundFloor(realm: Realm) {
         let table = Table()
+        table.id = 3
         table.capacity = 8
         table.floor = 0
         
@@ -64,6 +67,7 @@ class InsertionOfTable {
     class func insertTableFor10OntheGroundFloor(realm: Realm) {
         
         let table = Table()
+        table.id = 4
         table.capacity = 10
         table.floor = 0
         
@@ -80,6 +84,7 @@ class InsertionOfTable {
    class func insertTableForFourOnFirstFloor(realm: Realm) {
         
         let table = Table()
+        table.id = 5
         table.floor = 1
         table.capacity = 4
         
@@ -95,6 +100,7 @@ class InsertionOfTable {
     
     class func insertTableFor2OnFirstFloor(realm: Realm) {
         let table = Table()
+        table.id = 6
         table.capacity = 2
         table.floor = 1
         
@@ -109,6 +115,7 @@ class InsertionOfTable {
      */
     class func insertTableFor8OnTheFirstFloor(realm: Realm) {
         let table = Table()
+        table.id = 7
         table.capacity = 8
         table.floor = 1
         
@@ -125,6 +132,7 @@ class InsertionOfTable {
    class func insertTableFor10OntheFirstFloor(realm: Realm) {
         
         let table = Table()
+        table.id = 8
         table.capacity = 10
         table.floor = 1
         

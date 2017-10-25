@@ -32,6 +32,7 @@
 		D49998221F8BA04D0028FA2A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49998211F8BA04D0028FA2A /* Storage.swift */; };
 		D4A4A9821F9FE5960018F4CD /* InsertionOfTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A9811F9FE5960018F4CD /* InsertionOfTable.swift */; };
 		D4A4A9851F9FF9B70018F4CD /* InsertionOfClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A9841F9FF9B70018F4CD /* InsertionOfClient.swift */; };
+		D4A4A9871FA01C7F0018F4CD /* InsertionOfOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A4A9861FA01C7F0018F4CD /* InsertionOfOrder.swift */; };
 		D4D91CE41F967E2E00753394 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D91CE31F967E2E00753394 /* Address.swift */; };
 		D4ED068F1F8E46C200288B9B /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED068E1F8E46C200288B9B /* Job.swift */; };
 		D4ED06911F8E47CD00288B9B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED06901F8E47CD00288B9B /* Employee.swift */; };
@@ -67,6 +68,7 @@
 		D49998211F8BA04D0028FA2A /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		D4A4A9811F9FE5960018F4CD /* InsertionOfTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfTable.swift; sourceTree = "<group>"; };
 		D4A4A9841F9FF9B70018F4CD /* InsertionOfClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfClient.swift; sourceTree = "<group>"; };
+		D4A4A9861FA01C7F0018F4CD /* InsertionOfOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionOfOrder.swift; sourceTree = "<group>"; };
 		D4D91CE31F967E2E00753394 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		D4ED068E1F8E46C200288B9B /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		D4ED06901F8E47CD00288B9B /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				D45E6E231F9BCE9800196535 /* InsertionOfMenu.swift */,
 				D4A4A9811F9FE5960018F4CD /* InsertionOfTable.swift */,
 				D4A4A9841F9FF9B70018F4CD /* InsertionOfClient.swift */,
+				D4A4A9861FA01C7F0018F4CD /* InsertionOfOrder.swift */,
 			);
 			path = RealmInsertion;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				D45E6E1F1F9BBD0600196535 /* InsertionOfEmployee.swift in Sources */,
 				D45E6E1D1F9BBCE100196535 /* InsertionOfAddress.swift in Sources */,
 				D49998221F8BA04D0028FA2A /* Storage.swift in Sources */,
+				D4A4A9871FA01C7F0018F4CD /* InsertionOfOrder.swift in Sources */,
 				D4ED06911F8E47CD00288B9B /* Employee.swift in Sources */,
 				D49998061F8B9D7C0028FA2A /* Order.swift in Sources */,
 				D499980E1F8B9E380028FA2A /* Table.swift in Sources */,
