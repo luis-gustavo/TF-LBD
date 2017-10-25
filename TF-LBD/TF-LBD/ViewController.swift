@@ -67,6 +67,8 @@ class ViewController: UIViewController {
         //insertion of Tables
         InsertionOfTable.insertAllTables(realm: realm)
         
+        //insertion of Clients
+        InsertionOfClient.createAllClients(realm: realm)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -74,8 +76,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
-       
     }
 
 }

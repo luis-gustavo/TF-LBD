@@ -49,10 +49,11 @@ class CivilState: Object {
 }
 
 class Phone: Object {
+    @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var number: String = ""
-    @objc dynamic var ownerEmployee: Employee?
-    @objc dynamic var owner2Client: Client?
-    @objc dynamic var isEmployee: Bool = false
+    //@objc dynamic var ownerEmployee: Employee?
+    //@objc dynamic var owner2Client: Client?
+    //@objc dynamic var isEmployee: Bool = false
 }
 
 class SchoolDegree: Object {
