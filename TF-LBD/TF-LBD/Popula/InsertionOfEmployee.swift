@@ -187,7 +187,9 @@ class InsertionOfEmployee{
         employee1.name = "Murilo Pereira Araujo"
         employee1.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee1.parents = realm.objects(Parents.self).filter("fatherName = 'Pedro Lima Martins'").first
-        //employee1.phone =
+        let phone1 = Phone()
+        phone1.number = "98787-7509"
+        employee1.phone = phone1
         employee1.rg = realm.objects(Rg.self).filter("number = '29.820.541-5'").first
         employee1.sex = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
         
@@ -200,7 +202,9 @@ class InsertionOfEmployee{
         employee2.name = "Rafael Carvalho Fernandes"
         employee2.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee2.parents = realm.objects(Parents.self).filter("fatherName = 'Daniel Cardoso Silva'").first
-        //employee2.phone =
+        let phone2 = Phone()
+        phone2.number = "99352-8665"
+        employee2.phone = phone2
         employee2.rg = realm.objects(Rg.self).filter("number = '16.437.925-3'").first
         employee2.sex = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
         
@@ -213,7 +217,9 @@ class InsertionOfEmployee{
         employee3.name = "Martim Martins Dias"
         employee3.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee3.parents = realm.objects(Parents.self).filter("fatherName = 'Lucas Rodrigues Souza'").first
-        //employee3.phone =
+        let phone3 = Phone()
+        phone3.number = "98328-9199"
+        employee3.phone = phone3
         employee3.rg = realm.objects(Rg.self).filter("number = '10.995.759-3'").first
         employee3.sex = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
         
@@ -226,7 +232,9 @@ class InsertionOfEmployee{
         employee4.name = "Victor Ferreira Alves"
         employee4.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee4.parents = realm.objects(Parents.self).filter("fatherName = 'Kauê Souza Barros'").first
-        //employee4.phone =
+        let phone4 = Phone()
+        phone4.number = "98487-9407"
+        employee4.phone = phone4
         employee4.rg = realm.objects(Rg.self).filter("number = '36.249.828-3'").first
         employee4.sex = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
         
@@ -239,7 +247,9 @@ class InsertionOfEmployee{
         employee5.name = "Kaua Goncalves Barbosa"
         employee5.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee5.parents = realm.objects(Parents.self).filter("fatherName = 'Caio Silva Almeida'").first
-        //employee5.phone =
+        let phone5 = Phone()
+        phone5.number = "99103-1430"
+        employee5.phone = phone5
         employee5.rg = realm.objects(Rg.self).filter("number = '36.178.812-5'").first
         employee5.sex = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
         
@@ -252,7 +262,9 @@ class InsertionOfEmployee{
         employee6.name = "Matilde Pereira Barros"
         employee6.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee6.parents = realm.objects(Parents.self).filter("fatherName = 'Luis Almeida Goncalves'").first
-        //employee6.phone =
+        let phone6 = Phone()
+        phone6.number = "99103-1414"
+        employee6.phone = phone6
         employee6.rg = realm.objects(Rg.self).filter("number = '40.708.464-2'").first
         employee6.sex = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
         
@@ -265,7 +277,9 @@ class InsertionOfEmployee{
         employee7.name = "Tânia Correia Pinto"
         employee7.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee7.parents = realm.objects(Parents.self).filter("fatherName = 'Guilherme Sousa Cavalcanti'").first
-        //employee7.phone =
+        let phone7 = Phone()
+        phone7.number = "99103-1410"
+        employee7.phone = phone7
         employee7.rg = realm.objects(Rg.self).filter("number = '11.456.892-3'").first
         employee7.sex = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
         
@@ -278,7 +292,9 @@ class InsertionOfEmployee{
         employee8.name = "Raissa Sousa Correia"
         employee8.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee8.parents = realm.objects(Parents.self).filter("fatherName = 'João Pereira Ribeiro'").first
-        //employee8.phone =
+        let phone8 = Phone()
+        phone8.number = "99103-1409"
+        employee8.phone = phone8
         employee8.rg = realm.objects(Rg.self).filter("number = '27.938.093-8'").first
         employee8.sex = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
         
@@ -291,7 +307,9 @@ class InsertionOfEmployee{
         employee9.name = "Beatrice Pinto Ferreira"
         employee9.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee9.parents = realm.objects(Parents.self).filter("fatherName = 'Tiago Pinto Oliveira'").first
-        //employee9.phone =
+        let phone9 = Phone()
+        phone9.number = "99103-1408"
+        employee9.phone = phone9
         employee9.rg = realm.objects(Rg.self).filter("number = '21.304.045-1'").first
         employee9.sex = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
         
@@ -304,7 +322,9 @@ class InsertionOfEmployee{
         employee10.name = "Clara Fernandes Silva"
         employee10.naturality = realm.objects(City.self).filter("name = 'São Paulo'").first
         employee10.parents = realm.objects(Parents.self).filter("fatherName = 'Kai Santos Cardoso'").first
-        //employee10.phone =
+        let phone10 = Phone()
+        phone10.number = "99103-1439"
+        employee10.phone = phone10
         employee10.rg = realm.objects(Rg.self).filter("number = '23.588.896-5'").first
         employee10.sex = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
         
@@ -312,12 +332,6 @@ class InsertionOfEmployee{
             realm.add([employee1, employee2, employee3, employee4, employee5, employee6, employee7, employee8, employee9, employee10])
         }
     }
-    
-    //MARK: - PREENCHER TELEFONE
-    //TODO: - PREENCHER TELEFONE(precisa ter employee e client, por isso que ainda não dá para fazer)
-//    func insertionOfPhone(realm: Realm){
-//
-//    }
     
     class func insertionOfAllEmployees(realm: Realm){
         let insertion = InsertionOfEmployee()
@@ -327,8 +341,5 @@ class InsertionOfEmployee{
         insertion.insertionOfCivilState(realm: realm)
         insertion.insertionOfSchoolDegree(realm: realm)
         insertion.insertionOfEmployee(realm: realm)
-        //MARK: - PREENCHER TELEFONE
-        //TODO: - PREENCHER TELEFONE(precisa ter employee e client, por isso que ainda não dá para fazer)
-        //insertion.insertionOfPhone(realm: realm)
     }
 }

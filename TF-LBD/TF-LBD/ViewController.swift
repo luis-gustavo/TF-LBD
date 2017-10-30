@@ -28,7 +28,9 @@ class ViewController: UIViewController {
         // insertion of Jobs
         InsertionOfJob.creationOfAllJobs(realm: realm)
         
-        InsertionOfEmployee.insertionOfAllEmployees(realm: realm)      
+        //insertion of employees
+        InsertionOfEmployee.insertionOfAllEmployees(realm: realm)
+        
         //insertion of amounts
         InsertOfAmount.createAllAmounts(realm: realm)
         
