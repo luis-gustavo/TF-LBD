@@ -65,7 +65,17 @@ class ViewController: UIViewController {
 
         //creation of the invoices
         InsertionOfInvoince.createAllInvoices(realm: realm)
-
+        
+        //Queries
+        OComilaoQueries.allOrdersQuery(realm: realm)
+        
+        OComilaoQueries.allProductsInStorage(realm: realm)
+        
+        OComilaoQueries.allClientsRegistered(realm: realm)
+        
+        OComilaoQueries.allBillsMade(realm: realm)
+        
+        
     }
 
 }
