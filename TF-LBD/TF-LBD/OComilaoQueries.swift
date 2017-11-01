@@ -68,5 +68,7 @@ class OComilaoQueries{
     }
     
     //Lista dos clientes por perfil (exemplo: pratos mais consumidos pelo cliente)
-    
+    class func favoriteDishesOfClient(realm: Realm, clientId: String){
+        
+    }
 }

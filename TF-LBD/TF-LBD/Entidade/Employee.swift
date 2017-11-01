@@ -13,16 +13,24 @@ class Employee: Object {
     
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var cpf: String = ""
-    @objc dynamic var rg: Rg? = Rg()
+//    @objc dynamic var rg: Rg? = Rg()
+    @objc dynamic var rgId: String = ""
     @objc dynamic var name: String = ""
-    @objc dynamic var parents: Parents? = Parents()
-    @objc dynamic var sex: Sex? = Sex()
-    @objc dynamic var civilState: CivilState? = CivilState()
-    @objc dynamic var job: Job? = Job()
+//    @objc dynamic var parents: Parents? = Parents()
+    @objc dynamic var parentsId: String = ""
+//    @objc dynamic var sex: Sex? = Sex()
+    @objc dynamic var sexId: String = ""
+//    @objc dynamic var civilState: CivilState? = CivilState()
+    @objc dynamic var civilStateId: String = ""
+//    @objc dynamic var job: Job? = Job()
+    @objc dynamic var jobId: String = ""
     @objc dynamic var email: String = ""
-    @objc dynamic var address: Address? = Address()
-    @objc dynamic var phone: Phone? = Phone()
-    @objc dynamic var naturality: City? = City()
+//    @objc dynamic var address: Address? = Address()
+    @objc dynamic var addressId: String? = ""
+//    @objc dynamic var phone: Phone? = Phone()
+    @objc dynamic var phoneId: String = ""
+//    @objc dynamic var naturality: City? = City()
+    @objc dynamic var naturalityId: String = ""
     
 }
 
@@ -51,9 +59,6 @@ class CivilState: Object {
 class Phone: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var number: String = ""
-    //@objc dynamic var ownerEmployee: Employee?
-    //@objc dynamic var owner2Client: Client?
-    //@objc dynamic var isEmployee: Bool = false
 }
 
 class SchoolDegree: Object {

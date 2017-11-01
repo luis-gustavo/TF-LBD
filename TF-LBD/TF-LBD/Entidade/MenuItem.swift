@@ -12,9 +12,10 @@ import RealmSwift
 class MenuItem: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
-    var products = List<Product>()
+    var products = [String]()
     @objc dynamic var price: Float = 0.0
-    @objc dynamic var responsableToMake: ResponsableToMake? = ResponsableToMake()
+//    @objc dynamic var responsableToMake: ResponsableToMake? = ResponsableToMake()
+    @objc dynamic var responsableToMakeId: String = ""
 }
 
 class ResponsableToMake: Object {
@@ -23,7 +24,6 @@ class ResponsableToMake: Object {
 }
 
 enum ResponsableJob: String {
-    
     case kitchen = "kitchen"
     case bar = "bar"
 }
