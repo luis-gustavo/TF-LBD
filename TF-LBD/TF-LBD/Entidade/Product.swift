@@ -15,7 +15,8 @@ class Product: Object {
     @objc dynamic var isPerishable = false
     @objc dynamic var expirationDate = Date()
     @objc dynamic var quantity: Float = 0.0
-    @objc dynamic var amount: Amount? = Amount()
+//    @objc dynamic var amount: Amount? = Amount()
+    @objc dynamic var amountId: String = ""
 }
 
 class Amount: Object {

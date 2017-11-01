@@ -12,9 +12,12 @@ import RealmSwift
 class Bill: Object {
     
     @objc dynamic var id: Int = 0
-    var orders = List<Order>()
-    @objc dynamic var table: Table? = Table()
-    @objc dynamic var client: Client?
+//    var orders = List<Order>()
+    var orders = [Int]()
+//    @objc dynamic var table: Table? = Table()
+    @objc dynamic var tableId: String = ""
+//    @objc dynamic var client: Client?
+    @objc dynamic var clientId: String?
     @objc dynamic var cpfClientNotRegistered: String?
     
     /**

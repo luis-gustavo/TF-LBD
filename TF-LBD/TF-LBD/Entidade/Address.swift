@@ -18,19 +18,21 @@ class Country: Object {
 class State: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
-    @objc dynamic var country: Country?
+    //@objc dynamic var country: Country?
+    @objc dynamic var countryId: String = ""
 
 }
 class City: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
-    @objc dynamic var state: State?
-
+//    @objc dynamic var state: State?
+    @objc dynamic var stateId: String = ""
 }
 class Neighborhood: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
-    @objc dynamic var city: City?
+//    @objc dynamic var city: City?
+    @objc dynamic var cityId: String = ""
 }
 
 class Address: Object {
@@ -38,8 +40,10 @@ class Address: Object {
     @objc dynamic var zipCode: String = ""
     @objc dynamic var addressDescription: String = ""
     @objc dynamic var number: Int = 0
-    @objc dynamic var neighborhood: Neighborhood?
-    @objc dynamic var addressType: AddressType?
+//    @objc dynamic var neighborhood: Neighborhood?
+//    @objc dynamic var addressType: AddressType?
+    @objc dynamic var neighborhoodId: String = ""
+    @objc dynamic var addressTypeId: String = ""
 }
 
 class AddressType: Object {

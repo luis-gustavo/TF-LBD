@@ -13,5 +13,6 @@ class Table: Object {
     @objc dynamic var id: Int = 0
     @objc dynamic var capacity: Int = 0
     @objc dynamic var floor: Int = 0
-    var orders = List<Order>()
+//    var orders = List<Order>()
+    var orders = [Int]()
 }
