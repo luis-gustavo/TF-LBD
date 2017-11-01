@@ -15,7 +15,7 @@ class Bill: Object {
 //    var orders = List<Order>()
     var orders = [Int]()
 //    @objc dynamic var table: Table? = Table()
-    @objc dynamic var tableId: String = ""
+    @objc dynamic var tableId: Int = Int()
 //    @objc dynamic var client: Client?
     @objc dynamic var clientId: String?
     @objc dynamic var cpfClientNotRegistered: String?
@@ -25,13 +25,13 @@ class Bill: Object {
      - returns: the total of the bill in Float
      */
     func calculateTotal() -> Float {
-        
+
         var total: Float = 0.0
-        
+
         for item in orders {
            total = total + item.calculateSubTotal()
         }
-        
+
         return total
     }
 }
