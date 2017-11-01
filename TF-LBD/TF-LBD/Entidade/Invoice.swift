@@ -18,6 +18,6 @@ class Invoice: Object {
     @objc dynamic var date: Date = Date()
     @objc dynamic var totalValue: Float = 0.0
 //    @objc dynamic var bill: Bill? = Bill()
-    @objc dynamic var billId: String = ""
+    @objc dynamic var billId: Int = Int()
 }
 

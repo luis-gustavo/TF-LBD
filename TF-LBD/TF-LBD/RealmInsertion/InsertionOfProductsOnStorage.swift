@@ -36,7 +36,7 @@ class InsertionOfProductsOnStorage {
         
         
         try! realm.write {
-            storage.products.append(product)
+            storage.products.append(product.id)
             realm.add(storage)
         }
         

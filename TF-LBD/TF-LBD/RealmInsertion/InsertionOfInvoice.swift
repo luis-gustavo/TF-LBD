@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class InsertionOfInvoince {
-    
+
     /**
      Function to create the first Invoice
      - parameter realm: realm intance to save the invoice on the database
@@ -18,10 +18,11 @@ class InsertionOfInvoince {
     
    class func createTheFirstInvoice(realm: Realm) {
         let invoice = Invoice()
-        invoice.companyAddress = realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 40-44'").first
-        invoice.bill = realm.objects(Bill.self).filter("id = 1").first
-        invoice.totalValue = (invoice.bill?.calculateTotal())!
-    
+    invoice.companyAddressId = (realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 40-44'").first?.id)!
+    invoice.billId = (realm.objects(Bill.self).filter("id = 1").first?.id)!
+    let total = realm.objects(Bill.self).filter("id = \(invoice.billId)").first?.calculateTotal()
+    //invoice.totalValue = (invoice.billId.calculateTotal())!
+
         try! realm.write {
             realm.add(invoice)
         }
@@ -34,14 +35,16 @@ class InsertionOfInvoince {
     
    class func createTheSecondInvoice(realm: Realm) {
         let invoice = Invoice()
-        invoice.companyAddress = realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 40-44'").first
-        invoice.bill = realm.objects(Bill.self).filter("id = 2").first
-        invoice.totalValue = (invoice.bill?.calculateTotal())!
+    invoice.companyAddressId = (realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 40-44'").first?.id)!
+    invoice.billId = (realm.objects(Bill.self).filter("id = 2").first?.id)!
+    let total = realm.objects(Bill.self).filter("id = \(invoice.billId)").first?.calculateTotal()
+    invoice.totalValue = total!
+    //    invoice.totalValue = (invoice.billId?.calculateTotal())!
         try! realm.write {
             realm.add(invoice)
         }
     }
-    
+
     /**
      Function to create all the Invoices
      - parameter realm: realm intance to save the invoices on the database
@@ -52,3 +55,4 @@ class InsertionOfInvoince {
         createTheSecondInvoice(realm: realm)
     }
 }
+

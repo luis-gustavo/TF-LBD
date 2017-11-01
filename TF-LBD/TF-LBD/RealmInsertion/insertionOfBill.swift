@@ -18,15 +18,15 @@ class InsertionOfBill {
     class func creationOfTheFirstBill(realm: Realm) {
         let bill = Bill()
         bill.id = 1
-        
+
         let firstOrder = realm.objects(Order.self).filter("id = 1").first
         let secondOrder = realm.objects(Order.self).filter("id = 3").first
-        
-        bill.orders.append(firstOrder!)
-        bill.orders.append(secondOrder!)
-        bill.table = realm.objects(Table.self).filter("id = 2").first
-        bill.client = realm.objects(Client.self).filter("name = 'Samuel Martins Dias'").first
-        
+
+        bill.orders.append((firstOrder?.id)!)
+        bill.orders.append((secondOrder?.id)!)
+        bill.tableId = (realm.objects(Table.self).filter("id = 2").first?.id)!
+        bill.clientId = realm.objects(Client.self).filter("name = 'Samuel Martins Dias'").first?.id
+
         try! realm.write {
             realm.add(bill)
         }
@@ -42,8 +42,8 @@ class InsertionOfBill {
         bill.id = 2
         let firstOrder = realm.objects(Order.self).filter("id = 2").first
 
-        bill.orders.append(firstOrder!)
-        bill.table = realm.objects(Table.self).filter("id = 5").first
+        bill.orders.append((firstOrder?.id)!)
+        bill.tableId = (realm.objects(Table.self).filter("id = 5").first?.id)!
         bill.cpfClientNotRegistered = "123.432.123-43"
         
         try! realm.write {

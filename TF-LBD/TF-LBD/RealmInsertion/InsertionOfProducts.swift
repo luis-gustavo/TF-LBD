@@ -23,7 +23,7 @@ class InsertionOfProducts {
         greenCorn.isPerishable = false
         greenCorn.expirationDate = returnExpirationDateFromNow(day: 2, month: 1, year: 1)
         greenCorn.quantity = 200.0
-        greenCorn.amount = realm.objects(Amount.self).filter("amountDescription = 'grama'").first
+    greenCorn.amountId = (realm.objects(Amount.self).filter("amountDescription = 'grama'").first?.id)!
         
         try! realm.write {
             realm.add(greenCorn)
@@ -41,7 +41,7 @@ class InsertionOfProducts {
         milkCream.isPerishable = false
         milkCream.expirationDate = returnExpirationDateFromNow(day: 20, month: 3, year: 2)
         milkCream.quantity = 900.0
-        milkCream.amount = realm.objects(Amount.self).filter("amountDescription = 'grama'").first
+        milkCream.amountId = (realm.objects(Amount.self).filter("amountDescription = 'grama'").first?.id)!
         
         try! realm.write {
             realm.add(milkCream)
@@ -59,7 +59,7 @@ class InsertionOfProducts {
         creamyCheese.isPerishable = true
         creamyCheese.expirationDate = returnExpirationDateFromNow(day: 4, month: 2, year: 0)
         creamyCheese.quantity = 1.0
-        creamyCheese.amount = realm.objects(Amount.self).filter("amountDescription = 'kg'").first
+        creamyCheese.amountId = (realm.objects(Amount.self).filter("amountDescription = 'kg'").first?.id)!
         
         try! realm.write {
             realm.add(creamyCheese)
@@ -78,7 +78,7 @@ class InsertionOfProducts {
         chickenBreast.isPerishable = true
         chickenBreast.expirationDate = returnExpirationDateFromNow(day: 4, month: 4, year: 0)
         chickenBreast.quantity = 50.0
-        chickenBreast.amount = realm.objects(Amount.self).filter("amountDescription = 'kg'").first
+        chickenBreast.amountId = (realm.objects(Amount.self).filter("amountDescription = 'kg'").first?.id)!
         
         try! realm.write {
             realm.add(chickenBreast)
@@ -96,7 +96,7 @@ class InsertionOfProducts {
         milk.isPerishable = true
         milk.expirationDate = returnExpirationDateFromNow(day: 4, month: 2, year: 0)
         milk.quantity = 1.0
-        milk.amount = realm.objects(Amount.self).filter("amountDescription = 'kg'").first
+        milk.amountId = (realm.objects(Amount.self).filter("amountDescription = 'kg'").first?.id)!
         
         try! realm.write {
             realm.add(milk)
@@ -114,7 +114,7 @@ class InsertionOfProducts {
         flour.isPerishable = true
         flour.expirationDate = returnExpirationDateFromNow(day: 4, month: 2, year: 0)
         flour.quantity = 1.0
-        flour.amount = realm.objects(Amount.self).filter("amountDescription = 'kg'").first
+        flour.amountId = (realm.objects(Amount.self).filter("amountDescription = 'kg'").first?.id)!
         
         try! realm.write {
             realm.add(flour)
@@ -132,7 +132,7 @@ class InsertionOfProducts {
         egg.isPerishable = true
         egg.expirationDate = returnExpirationDateFromNow(day: 4, month: 2, year: 0)
         egg.quantity = 1.0
-        egg.amount = realm.objects(Amount.self).filter("amountDescription = 'kg'").first
+        egg.amountId = (realm.objects(Amount.self).filter("amountDescription = 'kg'").first?.id)!
         
         try! realm.write {
             realm.add(egg)

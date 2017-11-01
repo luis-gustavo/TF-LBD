@@ -15,7 +15,7 @@ class Bill: Object {
 //    var orders = List<Order>()
     var orders = [Int]()
 //    @objc dynamic var table: Table? = Table()
-    @objc dynamic var tableId: String = ""
+    @objc dynamic var tableId: Int = Int()
 //    @objc dynamic var client: Client?
     @objc dynamic var clientId: String?
     @objc dynamic var cpfClientNotRegistered: String?
@@ -33,7 +33,7 @@ class Bill: Object {
             total += (item?.calculateSubTotal())!
             
         }
-        
+
         return total
 //        var total: Float = 0.0
 //
