@@ -21,27 +21,27 @@ class ViewController: UIViewController {
         try! realm.write {
             realm.deleteAll()
         }
-        
+
         // insertion of Addresses
         InsertionOfAddress.insertionOfAllAddresses(realm: realm)
 
         // insertion of Jobs
         InsertionOfJob.creationOfAllJobs(realm: realm)
-        
+
         //insertion of employees
         InsertionOfEmployee.insertionOfAllEmployees(realm: realm)
-        
+
         //insertion of amounts
         InsertOfAmount.createAllAmounts(realm: realm)
-        
+
         // insertion of products
         InsertionOfProducts.createAllProducts(realm: realm)
-        
+
         // creation of the storage
         InsertionOfProductsOnStorage.insertStorage(realm: realm)
         let mainStorage = realm.objects(Storage.self).filter("name = 'principal'").first
         InsertionOfProductsOnStorage.insertionOfAllProductsOnStorage(realm: realm, storage: mainStorage!)
-        
+
         //insertion of responsable sector to make the dish
         InsertionOfMenuItem.insertionOfSectorResponsableToMake(realm: realm)
 

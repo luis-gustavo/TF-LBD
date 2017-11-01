@@ -11,9 +11,12 @@ import RealmSwift
 
 class Order: Object {
     @objc dynamic var id: Int = 0
-    var menuItems = List<MenuItem>()
-    @objc dynamic var table: Table? = Table()
-    @objc dynamic var waiter: Employee?
+    //var menuItems = List<MenuItem>()
+    var menuItems: [String] = []
+    //@objc dynamic var table: Table? = Table()
+    @objc dynamic var table: String = ""
+    //@objc dynamic var waiter: Employee?
+    @objc dynamic var waiter: String = ""
     
     
     /**
@@ -21,13 +24,22 @@ class Order: Object {
      - returns: the calculated amount
      */
     func calculateSubTotal() -> Float{
-        var subTotal: Float = 0.0
+        
+        var subTotal:Float = 0.0
         
         for item in menuItems {
-            subTotal = subTotal + item.price
+            let item = realm?.objects(MenuItem.self).filter("id = \(item)").first
+            subTotal += (item?.price)!
         }
-        
         return subTotal
+        
+//        var subTotal: Float = 0.0
+//
+//        for item in menuItems {
+//            subTotal = subTotal + item.price
+//        }
+//
+//        return subTotal
     }
 }
 
