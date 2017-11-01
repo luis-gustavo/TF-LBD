@@ -14,7 +14,7 @@ class Order: Object {
     //var menuItems = List<MenuItem>()
     var menuItems: [String] = []
     //@objc dynamic var table: Table? = Table()
-    @objc dynamic var table: String = ""
+    @objc dynamic var table: Int = -1
     //@objc dynamic var waiter: Employee?
     @objc dynamic var waiter: String = ""
     

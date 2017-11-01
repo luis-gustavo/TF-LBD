@@ -25,13 +25,22 @@ class Bill: Object {
      - returns: the total of the bill in Float
      */
     func calculateTotal() -> Float {
-        
+
         var total: Float = 0.0
         
-        for item in orders {
-           total = total + item.calculateSubTotal()
+        for order in orders {
+            let item = realm?.objects(Order.self).filter("id = \(order)").first
+            total += (item?.calculateSubTotal())!
+            
         }
         
         return total
+//        var total: Float = 0.0
+//
+//        for item in orders {
+//           total = total + item.calculateSubTotal()
+//        }
+//
+//        return total
     }
 }

@@ -23,12 +23,19 @@ class InsertionOfOrder {
         let secondOrderedItem = realm.objects(MenuItem.self).filter("name = 'cha'").first
         let thirdOrderedItem = realm.objects(MenuItem.self).filter("name = 'refrigerante'").first
         
-        order.menuItems.append(orderedItem!)
-        order.menuItems.append(secondOrderedItem!)
-        order.menuItems.append(thirdOrderedItem!)
+//        order.menuItems.append(orderedItem!)
+//        order.menuItems.append(secondOrderedItem!)
+//        order.menuItems.append(thirdOrderedItem!)
+//
+        order.menuItems.append((orderedItem?.id)!)
+        order.menuItems.append((secondOrderedItem?.id)!)
+        order.menuItems.append((thirdOrderedItem?.id)!)
         
-        order.table = realm.objects(Table.self).filter("id = 2").first
-        order.waiter = realm.objects(Employee.self).filter("name = 'Beatrice Pinto Ferreira'").first
+//        order.table = realm.objects(Table.self).filter("id = 2").first
+//        order.waiter = realm.objects(Employee.self).filter("name = 'Beatrice Pinto Ferreira'").first
+
+        order.table = 2
+        order.waiter = (realm.objects(Employee.self).filter("name = 'Beatrice Pinto Ferreira'").first?.id)!
         
         try! realm.write {
             realm.add(order)
@@ -52,13 +59,21 @@ class InsertionOfOrder {
         let thirdOrderedItem = realm.objects(MenuItem.self).filter("name = 'refrigerante'").first
         let fourthOrderedItem = realm.objects(MenuItem.self).filter("name = 'bolo'").first
         
-        order.menuItems.append(orderedItem!)
-        order.menuItems.append(secondOrderedItem!)
-        order.menuItems.append(thirdOrderedItem!)
-        order.menuItems.append(fourthOrderedItem!)
+//        order.menuItems.append(orderedItem!)
+//        order.menuItems.append(secondOrderedItem!)
+//        order.menuItems.append(thirdOrderedItem!)
+//        order.menuItems.append(fourthOrderedItem!)
+
+        order.menuItems.append((orderedItem?.id)!)
+        order.menuItems.append((secondOrderedItem?.id)!)
+        order.menuItems.append((thirdOrderedItem?.id)!)
+        order.menuItems.append((fourthOrderedItem?.id)!)
         
-        order.table = realm.objects(Table.self).filter("id = 5").first
-        order.waiter = realm.objects(Employee.self).filter("name = 'Murilo Pereira Araujo'").first
+//        order.table = realm.objects(Table.self).filter("id = 5").first
+//        order.waiter = realm.objects(Employee.self).filter("name = 'Murilo Pereira Araujo'").first
+
+        order.table = 5
+        order.waiter = (realm.objects(Employee.self).filter("name = 'Murilo Pereira Araujo'").first?.id)!
         
         try! realm.write {
             realm.add(order)
@@ -79,11 +94,17 @@ class InsertionOfOrder {
         let secondOrderedItem = realm.objects(MenuItem.self).filter("name = 'bolo'").first
 
         
-        order.menuItems.append(orderedItem!)
-        order.menuItems.append(secondOrderedItem!)
+//        order.menuItems.append(orderedItem!)
+//        order.menuItems.append(secondOrderedItem!)
+
+        order.menuItems.append((orderedItem?.id)!)
+        order.menuItems.append(secondOrderedItem!.id)
         
-        order.table = realm.objects(Table.self).filter("id = 2").first
-        order.waiter = realm.objects(Employee.self).filter("name = 'Beatrice Pinto Ferreira'").first
+//        order.table = realm.objects(Table.self).filter("id = 2").first
+//        order.waiter = realm.objects(Employee.self).filter("name = 'Beatrice Pinto Ferreira'").first
+
+        order.table = 2
+        order.waiter = (realm.objects(Employee.self).filter("name = 'Beatrice Pinto Ferreira'").first?.id)!
         
         try! realm.write {
             realm.add(order)
@@ -108,17 +129,27 @@ class InsertionOfOrder {
         let fifthOrderedItem = realm.objects(MenuItem.self).filter("name = 'bolo'").first
         let sixthOrderedItem = realm.objects(MenuItem.self).filter("name = 'bolo'").first
         
-        order.menuItems.append(orderedItem!)
-        order.menuItems.append(secondOrderedItem!)
-        order.menuItems.append(thirdOrderedItem!)
-        order.menuItems.append(fourthOrderedItem!)
-        order.menuItems.append(fifthOrderedItem!)
-        order.menuItems.append(sixthOrderedItem!)
+//        order.menuItems.append(orderedItem!)
+//        order.menuItems.append(secondOrderedItem!)
+//        order.menuItems.append(thirdOrderedItem!)
+//        order.menuItems.append(fourthOrderedItem!)
+//        order.menuItems.append(fifthOrderedItem!)
+//        order.menuItems.append(sixthOrderedItem!)
+
+        order.menuItems.append((orderedItem?.id)!)
+        order.menuItems.append((secondOrderedItem?.id)!)
+        order.menuItems.append((thirdOrderedItem?.id)!)
+        order.menuItems.append((fourthOrderedItem?.id)!)
+        order.menuItems.append((fifthOrderedItem?.id)!)
+        order.menuItems.append((sixthOrderedItem?.id)!)
+
+//        order.table = realm.objects(Table.self).filter("id = 3").first
+//
+//        order.waiter = realm.objects(Employee.self).filter("name = 'Murilo Pereira Araujo'").first
+
+        order.table = 3
         
-
-        order.table = realm.objects(Table.self).filter("id = 3").first
-
-        order.waiter = realm.objects(Employee.self).filter("name = 'Murilo Pereira Araujo'").first
+        order.waiter = (realm.objects(Employee.self).filter("name = 'Murilo Pereira Araujo'").first?.id)!
         
         try! realm.write {
             realm.add(order)

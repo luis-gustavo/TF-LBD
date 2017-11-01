@@ -22,9 +22,12 @@ class InsertionOfClient {
         client.cpf = "815.343.117-00"
         client.name = "Samuel Martins Dias"
         client.email = "samuel.martins.dias@hotmail.com"
-        client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
-        client.phone = realm.objects(Phone.self).filter("number = '11982039485'").first
-        client.address = realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 30'").first
+//        client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
+//        client.phone = realm.objects(Phone.self).filter("number = '11982039485'").first
+//        client.address = realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 30'").first
+        client.sexo = (realm.objects(Sex.self).filter("sexType = 'Masculino'").first?.id)!
+        client.phone = (realm.objects(Phone.self).filter("number = '11982039485'").first?.id)!
+        client.address = (realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 30'").first?.id)!
         
         try! realm.write {
             realm.add(client)
@@ -40,9 +43,13 @@ class InsertionOfClient {
         client.cpf = "555.186.764-17"
         client.name = "Kaua Pinto Cunha"
         client.email = "Kaua.kpc@outlook.com"
-        client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
-        client.phone = realm.objects(Phone.self).filter("number = '11992384756'").first
-        client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 30'").first
+//        client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
+//        client.phone = realm.objects(Phone.self).filter("number = '11992384756'").first
+//        client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 30'").first
+
+        client.sexo = (realm.objects(Sex.self).filter("sexType = 'Masculino'").first?.id)!
+        client.phone = (realm.objects(Phone.self).filter("number = '11992384756'").first?.id)!
+        client.address = (realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 30'").first?.id)!
         
         try! realm.write {
             realm.add(client)
@@ -58,10 +65,13 @@ class InsertionOfClient {
         client.cpf = "298.532.144-15"
         client.name = "Carlos Rocha Azevedo"
         client.email = "carlos.ra@gmail.com"
-        client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
-        client.phone = realm.objects(Phone.self).filter("number = '11999876567'").first
-        client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 45'").first
-        
+//        client.sexo = realm.objects(Sex.self).filter("sexType = 'Masculino'").first
+//        client.phone = realm.objects(Phone.self).filter("number = '11999876567'").first
+//        client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 45'").first
+
+        client.sexo = (realm.objects(Sex.self).filter("sexType = 'Masculino'").first?.id)!
+        client.phone = (realm.objects(Phone.self).filter("number = '11999876567'").first?.id)!
+        client.address = (realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 20 Lote 45'").first?.id)!
         try! realm.write {
             realm.add(client)
         }
@@ -76,10 +86,13 @@ class InsertionOfClient {
         client.cpf = "777.482.385-96"
         client.name = "Mariana Correia Cavalcanti"
         client.email = "mariana.correia.cavalcanti@outlook.com.br"
-        client.sexo = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
-        client.phone = realm.objects(Phone.self).filter("number = '11999234756'").first
-        client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 40 Lote 23'").first
+//        client.sexo = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
+//        client.phone = realm.objects(Phone.self).filter("number = '11999234756'").first
+//        client.address = realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 40 Lote 23'").first
 
+        client.sexo = (realm.objects(Sex.self).filter("sexType = 'Feminino'").first?.id)!
+        client.phone = (realm.objects(Phone.self).filter("number = '11999234756'").first?.id)!
+        client.address = (realm.objects(Address.self).filter("addressDescription = 'Barra Funda  Conjunto 40 Lote 23'").first?.id)!
         try! realm.write {
             realm.add(client)
         }
@@ -94,10 +107,14 @@ class InsertionOfClient {
         client.cpf = "371.258.148-32"
         client.name = "Leila Cunha Barros"
         client.email = "LeilaCunhaBarros@gmail.com"
-        client.sexo = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
-        client.phone = realm.objects(Phone.self).filter("number = '11987654321'").first
-        client.address = realm.objects(Address.self).filter("addressDescription = 'Lapa  Conjunto 53 Lote 29'").first
-        
+//        client.sexo = realm.objects(Sex.self).filter("sexType = 'Feminino'").first
+//        client.phone = realm.objects(Phone.self).filter("number = '11987654321'").first
+//        client.address = realm.objects(Address.self).filter("addressDescription = 'Lapa  Conjunto 53 Lote 29'").first
+
+        client.sexo = (realm.objects(Sex.self).filter("sexType = 'Feminino'").first?.id)!
+        client.phone = (realm.objects(Phone.self).filter("number = '11987654321'").first?.id)!
+        client.address = (realm.objects(Address.self).filter("addressDescription = 'Lapa  Conjunto 53 Lote 29'").first?.id)!
+
         try! realm.write {
             realm.add(client)
         }
@@ -184,8 +201,10 @@ class InsertionOfClient {
         let enderecoResidencial = realm.objects(AddressType.self).filter("addressTypeDescription = 'Residencial'").first
         
         let address10 = Address()
-        address10.addressType = enderecoResidencial
-        address10.neighborhood = morumbi
+//        address10.addressTypeId = enderecoResidencial
+//        address10.neighborhoodId = morumbi
+        address10.addressTypeId = (enderecoResidencial?.id)!
+        address10.neighborhoodId = (morumbi?.id)!
         address10.addressDescription = "Morumbi Conjunto 4 Lote 30"
         address10.number = 19
         address10.zipCode = "96385219"
@@ -205,8 +224,10 @@ class InsertionOfClient {
         let enderecoResidencial = realm.objects(AddressType.self).filter("addressTypeDescription = 'Residencial'").first
        
         let address10 = Address()
-        address10.addressType = enderecoResidencial
-        address10.neighborhood = barrafunda
+//        address10.addressType = enderecoResidencial
+//        address10.neighborhood = barrafunda
+        address10.addressTypeId = (enderecoResidencial?.id)!
+        address10.neighborhoodId = (barrafunda?.id)!
         address10.addressDescription = "Barra Funda  Conjunto 20 Lote 30"
         address10.number = 10
         address10.zipCode = "86385219"
@@ -227,8 +248,10 @@ class InsertionOfClient {
         let lapa = realm.objects(Neighborhood.self).filter("name = 'Lapa'").first
         
         let address10 = Address()
-        address10.addressType = enderecoResidencial
-        address10.neighborhood = lapa
+//        address10.addressType = enderecoResidencial
+//        address10.neighborhood = lapa
+        address10.addressTypeId = (enderecoResidencial?.id)!
+        address10.neighborhoodId = (lapa?.id)!
         address10.addressDescription = "Barra Funda  Conjunto 20 Lote 45"
         address10.number = 10
         address10.zipCode = "86385219"
@@ -248,8 +271,10 @@ class InsertionOfClient {
         let enderecoResidencial = realm.objects(AddressType.self).filter("addressTypeDescription = 'Residencial'").first
         
         let address10 = Address()
-        address10.addressType = enderecoResidencial
-        address10.neighborhood = barrafunda
+//        address10.addressType = enderecoResidencial
+//        address10.neighborhood = barrafunda
+        address10.addressTypeId = (enderecoResidencial?.id)!
+        address10.neighborhoodId = (barrafunda?.id)!
         address10.addressDescription = "Barra Funda  Conjunto 40 Lote 23"
         address10.number = 20
         address10.zipCode = "86385419"
@@ -270,8 +295,10 @@ class InsertionOfClient {
         let lapa = realm.objects(Neighborhood.self).filter("name = 'Lapa'").first
         
         let address10 = Address()
-        address10.addressType = enderecoResidencial
-        address10.neighborhood = lapa
+//        address10.addressType = enderecoResidencial
+//        address10.neighborhood = lapa
+        address10.addressTypeId = (enderecoResidencial?.id)!
+        address10.neighborhoodId = (lapa?.id)!
         address10.addressDescription = "Lapa  Conjunto 53 Lote 29"
         address10.number = 28
         address10.zipCode = "86385519"

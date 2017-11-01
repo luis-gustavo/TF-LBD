@@ -17,9 +17,15 @@ class InsertionOfMenu {
      */
     class func insertOfmenu(realm: Realm) {
         let menu = Menu()
-        menu.items = realm.objects(MenuItem.self).toArray()
-        menu.menuType = realm.objects(MenuType.self).filter("menuTypeDescription = 'menu principal'").first
+//        menu.items = realm.objects(MenuItem.self).toArray()
+//        menu.menuType = realm.objects(MenuType.self).filter("menuTypeDescription = 'menu principal'").first
+
+        let itens: [MenuItem] = realm.objects(MenuItem.self).toArray()
+        for item in itens {
+            menu.items.append(item.id)
+        }
         
+        menu.menuTypeId = (realm.objects(MenuType.self).filter("menuTypeDescription = 'menu principal'").first?.id)!
     }
     /**
      function to insert the main menu into the database

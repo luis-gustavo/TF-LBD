@@ -25,12 +25,19 @@ class InsertionOfMenuItem {
         let creamyCheese = realm.objects(Product.self).filter("name = 'requeijao'").first
         let chickenBreast = realm.objects(Product.self).filter("name = 'peito de frango'").first
         
-        fricace.products.append(greenCorn!)
-        fricace.products.append(milkCream!)
-        fricace.products.append(creamyCheese!)
-        fricace.products.append(chickenBreast!)
+//        fricace.products.append(greenCorn!)
+//        fricace.products.append(milkCream!)
+//        fricace.products.append(creamyCheese!)
+//        fricace.products.append(chickenBreast!)
+
+        fricace.products.append((greenCorn?.id)!)
+        fricace.products.append((milkCream?.id)!)
+        fricace.products.append((creamyCheese?.id)!)
+        fricace.products.append((chickenBreast?.id)!)
+
+//        fricace.responsableToMake = (realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'kitchen'").first
         
-        fricace.responsableToMake = realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'kitchen'").first
+        fricace.responsableToMakeId = (realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'kitchen'").first?.id)!
         
         try! realm.write {
             realm.add(fricace)
@@ -45,7 +52,9 @@ class InsertionOfMenuItem {
         let tea = MenuItem()
         tea.name = "cha"
         tea.price = 10.0
-        tea.responsableToMake = realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'bar'").first
+//        tea.responsableToMake = realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'bar'").first
+
+        tea.responsableToMakeId = (realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'bar'").first?.id)!
         
         try! realm.write {
             realm.add(tea)
@@ -59,8 +68,10 @@ class InsertionOfMenuItem {
         let softdrink = MenuItem()
         softdrink.name = "refrigerante"
         softdrink.price = 9.90
-        softdrink.responsableToMake = realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'bar'").first
-        
+//        softdrink.responsableToMake = realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'bar'").first
+
+        softdrink.responsableToMakeId = (realm.objects(ResponsableToMake.self).filter("responsableJobDescription = 'bar'").first?.id)!
+
         try! realm.write {
             realm.add(softdrink)
         }
@@ -76,8 +87,11 @@ class InsertionOfMenuItem {
         cake.price = 5.0
         let flour = realm.objects(Product.self).filter("name = 'farinha'").first
         let egg = realm.objects(Product.self).filter("name = 'ovo'").first
-        cake.products.append(flour!)
-        cake.products.append(egg!)
+//        cake.products.append(flour!)
+//        cake.products.append(egg!)
+
+        cake.products.append((flour?.id)!)
+        cake.products.append((egg?.id)!)
         
         try! realm.write {
             realm.add(cake)
