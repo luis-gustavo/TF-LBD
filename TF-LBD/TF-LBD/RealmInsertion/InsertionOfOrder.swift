@@ -26,7 +26,7 @@ class InsertionOfOrder {
 //        order.menuItems.append(orderedItem!)
 //        order.menuItems.append(secondOrderedItem!)
 //        order.menuItems.append(thirdOrderedItem!)
-//
+        
         order.menuItems.append((orderedItem?.id)!)
         order.menuItems.append((secondOrderedItem?.id)!)
         order.menuItems.append((thirdOrderedItem?.id)!)

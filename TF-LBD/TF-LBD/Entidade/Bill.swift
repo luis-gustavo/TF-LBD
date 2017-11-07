@@ -13,7 +13,22 @@ class Bill: Object {
     
     @objc dynamic var id: Int = 0
 //    var orders = List<Order>()
-    var orders = [Int]()
+    //var orders = [Int]()
+    var orders: [Int] {
+        get {
+            return _backingOrders.map { $0.intValue }
+        }
+        set {
+            _backingOrders.removeAll()
+            _backingOrders.append(objectsIn: newValue.map({ RealmInt(value: [$0]) }))
+            //appendContentsOf(newValue.map { RealmString(value: [$0]) })
+        }
+    }
+    let _backingOrders = List<RealmInt>()
+    
+    override class func ignoredProperties() -> [String] {
+        return ["orders"]
+    }
 //    @objc dynamic var table: Table? = Table()
     @objc dynamic var tableId: Int = Int()
 //    @objc dynamic var client: Client?
@@ -29,18 +44,12 @@ class Bill: Object {
         var total: Float = 0.0
         
         for order in orders {
+            print(order)
             let item = realm?.objects(Order.self).filter("id = \(order)").first
             total += (item?.calculateSubTotal())!
             
         }
 
         return total
-//        var total: Float = 0.0
-//
-//        for item in orders {
-//           total = total + item.calculateSubTotal()
-//        }
-//
-//        return total
     }
 }

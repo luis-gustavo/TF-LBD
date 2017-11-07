@@ -20,8 +20,9 @@ class InsertionOfInvoince {
         let invoice = Invoice()
     invoice.companyAddressId = (realm.objects(Address.self).filter("addressDescription = 'Morumbi Conjunto 4 Lote 40-44'").first?.id)!
     invoice.billId = (realm.objects(Bill.self).filter("id = 1").first?.id)!
+    print(invoice.billId)
     let total = realm.objects(Bill.self).filter("id = \(invoice.billId)").first?.calculateTotal()
-    //invoice.totalValue = (invoice.billId.calculateTotal())!
+    invoice.totalValue = total!
 
         try! realm.write {
             realm.add(invoice)
@@ -39,7 +40,6 @@ class InsertionOfInvoince {
     invoice.billId = (realm.objects(Bill.self).filter("id = 2").first?.id)!
     let total = realm.objects(Bill.self).filter("id = \(invoice.billId)").first?.calculateTotal()
     invoice.totalValue = total!
-    //    invoice.totalValue = (invoice.billId?.calculateTotal())!
         try! realm.write {
             realm.add(invoice)
         }

@@ -12,7 +12,22 @@ import RealmSwift
 class Menu: Object {
     @objc dynamic var id: String = UUID().uuidString
 //    var items = [MenuItem]()
-    var items = [String]()
+    //var items = [String]()
+    var items: [String] {
+        get {
+            return _backingItems.map { $0.stringValue }
+        }
+        set {
+            _backingItems.removeAll()
+            _backingItems.append(objectsIn: newValue.map({ RealmString(value: [$0]) }))
+            //appendContentsOf(newValue.map { RealmString(value: [$0]) })
+        }
+    }
+    let _backingItems = List<RealmString>()
+    
+    override class func ignoredProperties() -> [String] {
+        return ["items"]
+    }
 //    var menuType: MenuType? = MenuType()
     var menuTypeId: String = ""
 }

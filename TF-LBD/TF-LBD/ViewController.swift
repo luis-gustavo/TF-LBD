@@ -68,13 +68,12 @@ class ViewController: UIViewController {
         
         //Queries
         OComilaoQueries.allOrdersQuery(realm: realm)
-        
+
         OComilaoQueries.allProductsInStorage(realm: realm)
-        
+
         OComilaoQueries.allClientsRegistered(realm: realm)
-        
+
         OComilaoQueries.allBillsMade(realm: realm)
-        
         
     }
 

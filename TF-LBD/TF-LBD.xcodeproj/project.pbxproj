@@ -13,6 +13,7 @@
 		6E6505101F8B9495004C5642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E65050E1F8B9495004C5642 /* Main.storyboard */; };
 		6E6505121F8B9495004C5642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6505111F8B9495004C5642 /* Assets.xcassets */; };
 		6E6505151F8B9495004C5642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6505131F8B9495004C5642 /* LaunchScreen.storyboard */; };
+		6EA980531FAA453D0059445E /* PrimitiveClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA980521FAA453D0059445E /* PrimitiveClasses.swift */; };
 		6EC26E261FA7AF140011A8B9 /* OComilaoQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC26E251FA7AF140011A8B9 /* OComilaoQueries.swift */; };
 		D45E6E1B1F9BBC5200196535 /* Popula in Resources */ = {isa = PBXBuildFile; fileRef = D45E6E1A1F9BBC5200196535 /* Popula */; };
 		D45E6E1D1F9BBCE100196535 /* InsertionOfAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E6E1C1F9BBCE100196535 /* InsertionOfAddress.swift */; };
@@ -51,6 +52,7 @@
 		6E6505111F8B9495004C5642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E6505141F8B9495004C5642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E6505161F8B9495004C5642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA980521FAA453D0059445E /* PrimitiveClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimitiveClasses.swift; sourceTree = "<group>"; };
 		6EC26E251FA7AF140011A8B9 /* OComilaoQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OComilaoQueries.swift; sourceTree = "<group>"; };
 		8CDDD69F0E7F507406D62BB2 /* Pods_TF_LBD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TF_LBD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45E6E1A1F9BBC5200196535 /* Popula */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Popula; path = "TF-LBD/Popula"; sourceTree = SOURCE_ROOT; };
@@ -196,6 +198,7 @@
 				D49998211F8BA04D0028FA2A /* Storage.swift */,
 				D4ED06901F8E47CD00288B9B /* Employee.swift */,
 				D4D91CE31F967E2E00753394 /* Address.swift */,
+				6EA980521FAA453D0059445E /* PrimitiveClasses.swift */,
 			);
 			path = Entidade;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				D4A4A9871FA01C7F0018F4CD /* InsertionOfOrder.swift in Sources */,
 				D4ED06911F8E47CD00288B9B /* Employee.swift in Sources */,
 				D49998061F8B9D7C0028FA2A /* Order.swift in Sources */,
+				6EA980531FAA453D0059445E /* PrimitiveClasses.swift in Sources */,
 				D499980E1F8B9E380028FA2A /* Table.swift in Sources */,
 				D4D91CE41F967E2E00753394 /* Address.swift in Sources */,
 				D4A4A9891FA0247F0018F4CD /* insertionOfBill.swift in Sources */,
@@ -505,7 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7CN8A9X5L6;
+				DEVELOPMENT_TEAM = A93689JNSR;
 				INFOPLIST_FILE = "TF-LBD/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.bepiducb.TF-LBD";
@@ -521,7 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7CN8A9X5L6;
+				DEVELOPMENT_TEAM = A93689JNSR;
 				INFOPLIST_FILE = "TF-LBD/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.bepiducb.TF-LBD";

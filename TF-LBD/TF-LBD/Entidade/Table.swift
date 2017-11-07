@@ -14,5 +14,20 @@ class Table: Object {
     @objc dynamic var capacity: Int = 0
     @objc dynamic var floor: Int = 0
 //    var orders = List<Order>()
-    var orders = [Int]()
+    //var orders = [Int]()
+    var orders: [Int] {
+        get {
+            return _backingOrders.map { $0.intValue }
+        }
+        set {
+            _backingOrders.removeAll()
+            _backingOrders.append(objectsIn: newValue.map({ RealmInt(value: [$0]) }))
+            //appendContentsOf(newValue.map { RealmString(value: [$0]) })
+        }
+    }
+    let _backingOrders = List<RealmInt>()
+    
+    override class func ignoredProperties() -> [String] {
+        return ["orders"]
+    }
 }

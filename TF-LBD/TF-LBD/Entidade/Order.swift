@@ -11,12 +11,23 @@ import RealmSwift
 
 class Order: Object {
     @objc dynamic var id: Int = 0
-    //var menuItems = List<MenuItem>()
-    var menuItems: [String] = []
-    //@objc dynamic var table: Table? = Table()
     @objc dynamic var table: Int = -1
-    //@objc dynamic var waiter: Employee?
     @objc dynamic var waiter: String = ""
+    
+    var menuItems: [String] {
+        get {
+            return _backingMenuItems.map { $0.stringValue }
+        }
+        set {
+            _backingMenuItems.removeAll()
+            _backingMenuItems.append(objectsIn: newValue.map({ RealmString(value: [$0]) }))
+        }
+    }
+    let _backingMenuItems = List<RealmString>()
+    
+    override class func ignoredProperties() -> [String] {
+        return ["menuItems"]
+    }
     
     
     /**
@@ -28,18 +39,10 @@ class Order: Object {
         var subTotal:Float = 0.0
         
         for item in menuItems {
-            let item = realm?.objects(MenuItem.self).filter("id = \(item)").first
+            let item = realm?.objects(MenuItem.self).filter("id = '\(item)'").first
             subTotal += (item?.price)!
         }
         return subTotal
-        
-//        var subTotal: Float = 0.0
-//
-//        for item in menuItems {
-//            subTotal = subTotal + item.price
-//        }
-//
-//        return subTotal
     }
 }
 
