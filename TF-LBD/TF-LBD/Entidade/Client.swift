@@ -15,11 +15,22 @@ class Client: Object {
     @objc dynamic var cpf: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var email: String = ""
-    //@objc dynamic var sexo: Sex? = Sex()
     @objc dynamic var sexo: String = ""
-    //@objc dynamic var address: Address? = Address()
     @objc dynamic var address: String = ""
-    //@objc dynamic var phone: Phone? = Phone()
     @objc dynamic var phone: String = ""
+    var favoriteMenuItems: [String] {
+        get {
+            return _backingFavoriteMenuItems.map { $0.stringValue }
+        }
+        set {
+            _backingFavoriteMenuItems.removeAll()
+            _backingFavoriteMenuItems.append(objectsIn: newValue.map({ RealmString(value: [$0]) }))
+        }
+    }
+    let _backingFavoriteMenuItems = List<RealmString>()
+    
+    override class func ignoredProperties() -> [String] {
+        return ["favoriteMenuItems"]
+    }
     
 }

@@ -83,6 +83,14 @@ class InsertionOfProductsOnStorage {
         insertProductsOnStorage(realm: realm,
                                 product: egg,
                                 storage: storage)
+        
+        let expiredMeat = realm.objects(Product.self).filter("name = 'carne'").first!
+        insertProductsOnStorage(realm: realm, product: expiredMeat, storage: storage)
+        
+        let cheeseAboutToExpire = realm.objects(Product.self).filter("name = 'queijo'").first
+        insertProductsOnStorage(realm: realm,
+                                product: cheeseAboutToExpire!,
+                                storage: storage)
     }
     
 }

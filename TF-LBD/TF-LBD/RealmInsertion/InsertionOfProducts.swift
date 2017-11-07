@@ -139,6 +139,35 @@ class InsertionOfProducts {
         }
     }
     
+    class func insertionOfExpiredMeat(realm: Realm){
+        let meat = Product()
+        meat.name = "carne"
+        meat.isPerishable = true
+        meat.expirationDate = returnExpirationDateFromNow(day: -2, month: 0, year: 0)
+        meat.quantity = 1.0
+        meat.amountId = (realm.objects(Amount.self).filter("amountDescription = 'kg'").first?.id)!
+        
+        try! realm.write {
+            realm.add(meat)
+        }
+        
+    }
+    
+    class func insertionOfProductAboutToExpire(realm: Realm) {
+        
+        let cheese = Product()
+        cheese.name = "queijo"
+        cheese.isPerishable = true
+        cheese.quantity = 500.0
+        cheese.amountId = (realm.objects(Amount.self).filter("amountDescription = 'grama'").first?.id)!
+        cheese.expirationDate = returnExpirationDateFromNow(day: 5, month: 0, year: 0)
+        
+        try! realm.write {
+            realm.add(cheese)
+        }
+
+    }
+    
     
     /**
      Function to return the expiring date from now to how many days, months and years the product will expire
@@ -151,9 +180,9 @@ class InsertionOfProducts {
     class func returnExpirationDateFromNow(day: Int, month: Int, year: Int) -> Date {
         var components = DateComponents()
         
-        components.setValue(1, for: .year)
-        components.setValue(1, for: .month)
-        components.setValue(1, for: .day)
+        components.setValue(year, for: .year)
+        components.setValue(month, for: .month)
+        components.setValue(day, for: .day)
         let date: Date = Date()
         let expirationDate = Calendar.current.date(byAdding: components, to: date)
         
@@ -175,10 +204,10 @@ class InsertionOfProducts {
         insertionOfChickenBreast(realm: realm)
         insertionOfMilkCream(realm: realm)
         insertionOfCreamyCheese(realm: realm)
+        insertionOfExpiredMeat(realm: realm)
+        insertionOfProductAboutToExpire(realm: realm)
     }
 }
-
-//let pups = realm.objects(Dog.self).filter("age < 2")
 
 // MARK: - insertion of Amount
 

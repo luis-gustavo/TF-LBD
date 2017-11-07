@@ -12,8 +12,6 @@ import RealmSwift
 class Bill: Object {
     
     @objc dynamic var id: Int = 0
-//    var orders = List<Order>()
-    //var orders = [Int]()
     var orders: [Int] {
         get {
             return _backingOrders.map { $0.intValue }
@@ -21,7 +19,6 @@ class Bill: Object {
         set {
             _backingOrders.removeAll()
             _backingOrders.append(objectsIn: newValue.map({ RealmInt(value: [$0]) }))
-            //appendContentsOf(newValue.map { RealmString(value: [$0]) })
         }
     }
     let _backingOrders = List<RealmInt>()
@@ -29,9 +26,7 @@ class Bill: Object {
     override class func ignoredProperties() -> [String] {
         return ["orders"]
     }
-//    @objc dynamic var table: Table? = Table()
     @objc dynamic var tableId: Int = Int()
-//    @objc dynamic var client: Client?
     @objc dynamic var clientId: String?
     @objc dynamic var cpfClientNotRegistered: String?
     

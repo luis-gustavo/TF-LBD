@@ -23,6 +23,7 @@ class InsertionOfTable {
         table.floor = 0
         table.capacity = 4
         
+        
         try! realm.write {
             realm.add(table)
         }
@@ -38,6 +39,10 @@ class InsertionOfTable {
         table.id = 2
         table.capacity = 2
         table.floor = 0
+        let orderOne = realm.objects(Order.self).filter("id = 1").first?.id
+        table.orders.append(orderOne!)
+        let orderThree = realm.objects(Order.self).filter("id = 3").first?.id
+        table.orders.append(orderThree!)
         
         try! realm.write {
             realm.add(table)
@@ -53,6 +58,8 @@ class InsertionOfTable {
         table.id = 3
         table.capacity = 8
         table.floor = 0
+        let orderFour = realm.objects(Order.self).filter("id = 4").first?.id
+        table.orders.append(orderFour!)
         
         try! realm.write {
             realm.add(table)
@@ -87,6 +94,8 @@ class InsertionOfTable {
         table.id = 5
         table.floor = 1
         table.capacity = 4
+        let orderTwo = realm.objects(Order.self).filter("id = 2").first?.id
+        table.orders.append(orderTwo!)
         
         try! realm.write {
             realm.add(table)

@@ -12,8 +12,6 @@ import RealmSwift
 class Storage: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
-//    var products = List<Product>()
-    //var products = [String]()
     var products: [String] {
         get {
             return _backingProducts.map { $0.stringValue }
@@ -21,7 +19,6 @@ class Storage: Object {
         set {
             _backingProducts.removeAll()
             _backingProducts.append(objectsIn: newValue.map({ RealmString(value: [$0]) }))
-            //appendContentsOf(newValue.map { RealmString(value: [$0]) })
         }
     }
     let _backingProducts = List<RealmString>()
